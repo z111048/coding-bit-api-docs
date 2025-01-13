@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+    <link href="/Coding-bit/assets/icon-infinite-7978421b.svg" rel="icon" type="image/x-icon">
+     <title>
+      Coding∞bit ｜ 客製化學習需求影片一覽
+     </title>
+     <script crossorigin="" src="/Coding-bit/assets/course-list_customLearning-ee9f80fe.js" type="module">
+     </script>
+     <link crossorigin="" href="/Coding-bit/assets/main-8cc1435a.js" rel="modulepreload"/>
+     <link crossorigin="" href="/Coding-bit/assets/courses-dc73fe3c.js" rel="modulepreload"/>
+     <link href="/Coding-bit/assets/main-9db69f1c.css" rel="stylesheet"/>
+    </link>
+   </link>
+  </link>
+ </head>
+ <body>
+  <div class="loader-wrapper">
+   <svg height="75px" preserveaspectratio="xMidYMid meet" viewbox="0 0 187.3 93.7" width="150px">
+    <defs>
+     <lineargradient id="gradient" x1="0%" x2="100%" y1="0%" y2="0%">
+      <stop offset="0%" style="stop-color: #d0a2f7; stop-opacity: 1">
+      </stop>
+      <stop offset="50%" style="stop-color: #f1eaff; stop-opacity: 1">
+      </stop>
+      <stop offset="100%" style="stop-color: #645caa; stop-opacity: 1">
+      </stop>
+     </lineargradient>
+    </defs>
+    <path d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 -8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" id="outline-bg">
+    </path>
+    <path d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 -8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" id="outline">
+    </path>
+   </svg>
+  </div>
+  <a href="javascript:void(0);" onclick="scrollToTop()">
+   <img alt="to-top-btn-image" class="scroll-to-top-btn" src="/Coding-bit/assets/icons-to-top-fc9c406a.png"/>
+  </a>
+  <script>
+   function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+  </script>
+  <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
+   <div class="container-lg">
+    <div class="d-flex">
+     <a class="navbar-brand me-10" href="index.html">
+      <picture>
+       <source media="(max-width: 575.98px)" srcset="/Coding-bit/assets/logo-sm-4c04fedc.svg "/>
+       <img alt="logo-image" src="/Coding-bit/assets/logo-da4adea3.svg">
+       </img>
+      </picture>
+     </a>
+     <div class="position-relative f-align-center d-none d-xl-flex">
+      <input class="form-control nav-search-desktop" placeholder="搜尋感興趣的課程" type="search"/>
+      <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px">
+       search
+      </span>
+     </div>
+    </div>
+    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler border-0 p-2" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" id="layout-navbar-toggler" type="button">
+     <span class="material-symbols-outlined icon-fill fs-4" id="menu-icon">
+      menu
+     </span>
+     <span class="material-symbols-outlined icon-fill fs-4 d-none" id="close-icon">
+      close
+     </span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+     <ul class="navbar-nav align-items-lg-center">
+      <li class="position-relative f-align-center d-lg-none">
+       <input class="form-control nav-search-mobile" placeholder="搜尋感興趣的課程" type="search"/>
+       <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px">
+        search
+       </span>
+      </li>
+      <li class="nav-item mt-4 mt-lg-0">
+       <a aria-current="page" class="nav-link underline-hover d-inline-flex link-gray-02" href="course-list.html">
+        精選課程
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02" href="tutor-list.html">
+        一對一教學
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02" href="custom-course.html">
+        課程客製化
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02" href="help-center.html">
+        幫助中心
+       </a>
+      </li>
+      <li class="nav-item nav-bottom-btn ms-lg-10">
+       <a href="sign-up.html">
+        <button class="btn btn-outline-brand-03 w-100">
+         登入 / 註冊
+        </button>
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script>
+   document.addEventListener('DOMContentLoaded', function () {
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    const toggler = document.getElementById('layout-navbar-toggler');
+    const layoutNavWrap = document.querySelector('.layout-nav-wrap');
+
+    toggler.addEventListener('click', function () {
+      if (menuIcon.classList.contains('d-none')) {
+        menuIcon.classList.remove('d-none');
+        closeIcon.classList.add('d-none');
+        layoutNavWrap.classList.remove('bg-white');
+        layoutNavWrap.classList.add('bg-transparent');
+
+        document.body.classList.remove('no-scroll');
+      } else {
+        menuIcon.classList.add('d-none');
+        closeIcon.classList.remove('d-none');
+        layoutNavWrap.classList.remove('bg-transparent');
+        layoutNavWrap.classList.add('bg-white');
+
+        document.body.classList.add('no-scroll');
+
+      }
+    });
+  });
+  </script>
+  <header class="customLearning-header-section bg-brand-05 wrap">
+   <div class="container">
+    <nav aria-label="breadcrumb">
+     <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+       <a class="underline-hover" href="index.html">
+        首頁
+       </a>
+      </li>
+      <li class="breadcrumb-item">
+       <a class="underline-hover" href="course-list.html">
+        課程一覽
+       </a>
+      </li>
+      <li aria-current="page" class="breadcrumb-item active fw-semibold">
+       客製化學習需求影片一覽
+      </li>
+     </ol>
+    </nav>
+    <h1 class="text-brand-03 fs-3 fs-lg-1 mt-8">
+     客製化學習需求影片一覽
+    </h1>
+    <p class="fs-6 fs-lg-5 mt-3">
+     由講師專為解決學生需求而錄製，為成果導向的教學影片
+    </p>
+    <div class="category-list f-center mt-10 mt-lg-13">
+     <span class="material-symbols-outlined bg-brand-02 text-brand-01 p-2 rounded-circle me-2 mb-4 arrow" role="button">
+      chevron_left
+     </span>
+     <a class="btn btn-brand-03 me-2 mb-4 border border-3 border-brand-03" href="#">
+      全部
+     </a>
+     <a class="btn btn-outline-brand-03 me-2 mb-4" href="#">
+      HTML &amp; CSS
+     </a>
+     <a class="btn btn-outline-brand-03 me-2 mb-4" href="#">
+      JavaScript
+     </a>
+     <a class="btn btn-outline-brand-03 me-2 mb-4" href="#">
+      WordPress
+     </a>
+     <a class="btn btn-outline-brand-03 me-2 mb-4" href="#">
+      Python
+     </a>
+     <a class="btn btn-outline-brand-03 me-2 mb-4" href="#">
+      Vue
+     </a>
+     <a class="btn btn-outline-brand-03 me-2 mb-4" href="#">
+      React
+     </a>
+     <a class="btn btn-outline-brand-03 me-2 mb-4" href="#">
+      C++
+     </a>
+     <a class="btn btn-outline-brand-03 me-2 mb-4" href="#">
+      Bootstrap
+     </a>
+     <span class="material-symbols-outlined p-2 rounded-circle bg-brand-02 text-brand-01 mb-4 arrow" role="button">
+      chevron_right
+     </span>
+    </div>
+   </div>
+  </header>
+  <main class="customLearning-course-section wrap">
+   <div class="container">
+    <div class="control-group f-end-center">
+     <div class="position-relative f-align-center d-flex me-2 search-tutor">
+      <input class="form-control nav-search-desktop border border-brand-03 border-3" placeholder="搜尋影片" type="search"/>
+      <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px">
+       search
+      </span>
+     </div>
+     <div class="sort">
+      <button aria-expanded="false" class="btn btn-outline-brand-03 dropdown-toggle" data-bs-toggle="dropdown" type="button">
+       排序方式
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end">
+       <li>
+        <a class="dropdown-item" href="#">
+         最熱門
+        </a>
+       </li>
+       <li>
+        <a class="dropdown-item" href="#">
+         最高評價
+        </a>
+       </li>
+       <li>
+        <a class="dropdown-item" href="#">
+         依時間(最舊到最新)
+        </a>
+       </li>
+       <li>
+        <a class="dropdown-item" href="#">
+         依時間(最新到最舊)
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="row customLearningCourse-card-wrap mt-6 mt-lg-8 g-5">
+     <div class="col-md-6 col-xl-4">
+      <a class="course-card card-column" href="video-details.html">
+       <div class="card gradient-border img-hover-enlarge p-lg-6 p-4 h-100">
+        <div class="overflow-hidden img-wrapper rounded position-relative">
+         <img alt="course-image" class="card-img-top cover-img rounded" src="https://raw.githubusercontent.com/ahmomoz/Coding-bit/refs/heads/main/assets/images/course/course-1.png"/>
+        </div>
+        <span class="course-category-tag opacity-75 position-absolute">
+         客製化學習需求教學影片
+        </span>
+        <div class="card-body p-0 mt-3 mt-lg-4 f-column-between">
+         <div>
+          <h3 class="card-title fs-6 fs-lg-5">
+           CSS 毛玻璃製作效果
+          </h3>
+          <p class="card-text fs-7 fs-lg-6 mt-1 mt-lg-2">
+           卡斯伯 Casper
+          </p>
+         </div>
+         <div class="f-between-center">
+          <div class="f-align-center mt-1 mt-lg-2">
+           <div class="f-center">
+            <span class="material-symbols-outlined fs-5 me-1">
+             schedule
+            </span>
+            <p class="fs-7 fs-lg-6">
+             8分16秒
+            </p>
+           </div>
+           <div class="f-center ms-2">
+            <span class="material-symbols-outlined fs-5 me-1">
+             group
+            </span>
+            <p class="fs-7 fs-lg-6">
+             1,100
+            </p>
+           </div>
+          </div>
+          <p class="f-center text-brand-03 fs-7 fs-lg-6">
+           <span class="material-symbols-outlined icon-fill text-brand-01 fs-6 fs-lg-5 me-1">
+            kid_star
+           </span>
+           4.0
+          </p>
+         </div>
+        </div>
+       </div>
+      </a>
+     </div>
+    </div>
+    <nav aria-label="navigation" class="mt-6 mt-lg-8">
+     <ul class="pagination f-center">
+      <li class="page-item disabled">
+       <a aria-label="Previous" class="page-link" href="#">
+        <span aria-hidden="true">
+         <span class="material-symbols-outlined align-middle">
+          arrow_left
+         </span>
+        </span>
+       </a>
+      </li>
+      <li class="page-item">
+       <a class="page-link active" href="#">
+        1
+       </a>
+      </li>
+      <li class="page-item">
+       <a class="page-link" href="#">
+        2
+       </a>
+      </li>
+      <li class="page-item">
+       <a class="page-link" href="#">
+        3
+       </a>
+      </li>
+      <li class="page-item">
+       <a aria-label="Next" class="page-link" href="#">
+        <span aria-hidden="true">
+         <span class="material-symbols-outlined align-middle">
+          arrow_right
+         </span>
+        </span>
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </main>
+  <footer class="layout-footer-wrap wrap-lg bg-white">
+   <div class="container f-xl-between">
+    <div class="footer-info-wrap flex-grow-1">
+     <a class="navbar-brand" href="index.html">
+      <picture>
+       <source media="(max-width: 575.98px)" srcset="/Coding-bit/assets/logo-sm-4c04fedc.svg "/>
+       <img alt="logo-image" src="/Coding-bit/assets/logo-da4adea3.svg"/>
+      </picture>
+     </a>
+     <ul class="mt-4">
+      <li class="f-align-center">
+       <span class="material-symbols-outlined fs-6">
+        call
+       </span>
+       <a class="fs-7 underline-hover lh-sm ms-2" href="tel:+0212345678">
+        (02) 1234-5678
+       </a>
+      </li>
+      <li class="f-align-center mt-2">
+       <span class="material-symbols-outlined fs-6">
+        schedule
+       </span>
+       <p class="fs-7 lh-sm ms-2">
+        MON - FRI : 8:30 am - 17:30 pm
+       </p>
+      </li>
+      <li class="f-align-center mt-2">
+       <p class="fs-7 lh-sm">
+        本網站僅供作品參考，並非真實營運販售
+       </p>
+      </li>
+     </ul>
+    </div>
+    <div class="d-flex flex-grow-1 mt-8 mt-lg-0">
+     <ul class="navbar-nav f-column w-50 px-4">
+      <li class="nav-item">
+       <a aria-current="page" class="nav-link underline-hover d-inline-flex link-gray-02 fs-7" href="course-list.html">
+        精選課程
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02 fs-7" href="tutor-list.html">
+        一對一教學
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02 fs-7" href="custom-course.html">
+        課程客製化
+       </a>
+      </li>
+     </ul>
+     <ul class="navbar-nav f-column w-50 px-4">
+      <li class="nav-item">
+       <a aria-current="page" class="nav-link underline-hover d-inline-flex link-gray-02 fs-7" href="help-center.html">
+        幫助中心
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02 fs-7" href="subscription.html">
+        訂閱方案選擇
+       </a>
+      </li>
+     </ul>
+    </div>
+    <ul class="d-flex justify-content-lg-end flex-grow-1 mt-8 mt-lg-0 ms-lg-6">
+     <li>
+      <a class="icon-hover" href="#">
+       <img alt="icon-ins" src="/Coding-bit/assets/icon-ins-purple-75e17ab2.svg"/>
+      </a>
+     </li>
+     <li class="ms-3">
+      <a class="icon-hover" href="#">
+       <img alt="icon-ins" src="/Coding-bit/assets/icon-facebook-purple-e86143aa.svg"/>
+      </a>
+     </li>
+     <li class="ms-3">
+      <a class="icon-hover" href="#">
+       <img alt="icon-ins" src="/Coding-bit/assets/icon-mail-purple-c0b70022.svg"/>
+      </a>
+     </li>
+    </ul>
+   </div>
+  </footer>
+ </body>
+</html>

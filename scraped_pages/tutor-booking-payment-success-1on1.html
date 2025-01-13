@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+  <link href="/Coding-bit/assets/icon-infinite-7978421b.svg" rel="icon" type="image/x-icon"/>
+  <title>
+   Coding∞bit ｜ 講師預約
+  </title>
+  <script crossorigin="" src="/Coding-bit/assets/main-8cc1435a.js" type="module">
+  </script>
+  <script crossorigin="" src="/Coding-bit/assets/courses-dc73fe3c.js" type="module">
+  </script>
+  <script crossorigin="" src="/Coding-bit/assets/index-fdd175bd.js" type="module">
+  </script>
+  <link href="/Coding-bit/assets/main-9db69f1c.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
+   <div class="container-lg">
+    <div class="d-flex">
+     <a class="navbar-brand me-10" href="index.html">
+      <picture>
+       <source media="(max-width: 575.98px)" srcset="/Coding-bit/assets/logo-sm-4c04fedc.svg "/>
+       <img alt="logo-image" src="/Coding-bit/assets/logo-da4adea3.svg"/>
+      </picture>
+     </a>
+     <div class="position-relative f-align-center d-none d-xl-flex">
+      <input class="form-control nav-search-desktop" placeholder="搜尋感興趣的課程" type="search"/>
+      <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px">
+       search
+      </span>
+     </div>
+    </div>
+    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler border-0 p-2" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" id="layout-navbar-toggler" type="button">
+     <span class="material-symbols-outlined icon-fill fs-4" id="menu-icon">
+      menu
+     </span>
+     <span class="material-symbols-outlined icon-fill fs-4 d-none" id="close-icon">
+      close
+     </span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+     <ul class="navbar-nav align-items-lg-center">
+      <li class="position-relative f-align-center d-lg-none">
+       <input class="form-control nav-search-mobile" placeholder="搜尋感興趣的課程" type="search"/>
+       <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px">
+        search
+       </span>
+      </li>
+      <li class="nav-item mt-4 mt-lg-0">
+       <a aria-current="page" class="nav-link underline-hover d-inline-flex link-gray-02" href="course-list.html">
+        精選課程
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02" href="tutor-list.html">
+        一對一教學
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02" href="custom-course.html">
+        課程客製化
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02" href="help-center.html">
+        幫助中心
+       </a>
+      </li>
+      <li class="nav-item nav-bottom-btn ms-lg-10">
+       <a href="sign-up.html">
+        <button class="btn btn-outline-brand-03 w-100">
+         登入 / 註冊
+        </button>
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script>
+   document.addEventListener('DOMContentLoaded', function () {
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    const toggler = document.getElementById('layout-navbar-toggler');
+    const layoutNavWrap = document.querySelector('.layout-nav-wrap');
+
+    toggler.addEventListener('click', function () {
+      if (menuIcon.classList.contains('d-none')) {
+        menuIcon.classList.remove('d-none');
+        closeIcon.classList.add('d-none');
+        layoutNavWrap.classList.remove('bg-white');
+        layoutNavWrap.classList.add('bg-transparent');
+
+        document.body.classList.remove('no-scroll');
+      } else {
+        menuIcon.classList.add('d-none');
+        closeIcon.classList.remove('d-none');
+        layoutNavWrap.classList.remove('bg-transparent');
+        layoutNavWrap.classList.add('bg-white');
+
+        document.body.classList.add('no-scroll');
+
+      }
+    });
+  });
+  </script>
+  <main class="tutor-booking-success-section wrap">
+   <div class="container">
+    <div class="f-center">
+     <h1 class="fs-2 fs-lg-1 text-brand-03 f-align-center">
+      <span class="material-symbols-outlined icon-fill display-3 text-brand-03 me-5">
+       check_circle
+      </span>
+      付款成功
+     </h1>
+    </div>
+    <div class="row f-center">
+     <div class="col-md-8 col-xxl-6 mt-10 mt-lg-11">
+      <div class="card shadow rounded-2 p-6 p-lg-10">
+       <h2 class="fs-5 fs-lg-4 w-bolder">
+        預約詳細資訊
+       </h2>
+       <!-- 詳細預約內容 -->
+       <form class="mt-6">
+        <div class="row row-cols-md-2">
+         <div class="mb-md-12 mb-6">
+          <label class="form-label" for="tutor">
+           <h3 class="fs-6 fw-medium">
+            預約老師
+           </h3>
+          </label>
+          <input class="form-control border-0 bg-white p-0 rounded-0 text-gray-02" disabled="" id="tutor" type="text" value="卡斯伯 Casper"/>
+         </div>
+         <div class="mb-md-12 mb-6">
+          <label class="form-label" for="bookingType">
+           <h3 class="fs-6 fw-medium">
+            預約類型
+           </h3>
+          </label>
+          <input class="form-control border-0 bg-white p-0 rounded-0 text-gray-02" disabled="" id="bookingType" type="text" value="一對一教學"/>
+         </div>
+         <div class="mb-md-5 mb-6">
+          <label class="form-label" for="date">
+           <h3 class="fs-6 fw-medium">
+            預約日期
+           </h3>
+          </label>
+          <input class="form-control border-0 bg-white p-0 rounded-0 text-gray-02" disabled="" id="date" type="text" value="2024/08/11"/>
+         </div>
+         <div class="mb-md-5 mb-6">
+          <label class="form-label" for="timeslot">
+           <h3 class="fs-6 fw-medium">
+            預約時段
+           </h3>
+          </label>
+          <input class="form-control border-0 bg-white p-0 rounded-0 text-gray-02" disabled="" id="timeslot" type="text" value="10:00-11:00"/>
+         </div>
+        </div>
+        <hr/>
+        <div class="mt-10">
+         <!-- 一程式碼檢視 -->
+         <!-- 一對一教學 -->
+         <div>
+          <label class="form-label" for="userInput">
+           希望接受指導的項目
+          </label>
+          <textarea class="form-control border-0 bg-white p-0 rounded-0 text-gray-02" disabled="" id="userInput" rows="5" style="resize: none">
+想深入學習 TypeScript 的高級類型，如條件類型、映射類型等，以提高代碼的類型安全性和可讀性。同時也希望了解泛型在實際項目中的最佳實踐。</textarea>
+         </div>
+        </div>
+       </form>
+       <!-- 提醒 -->
+       <div class="mt-6 alert bg-brand-02 f-center" role="alert">
+        <span class="material-symbols-outlined me-2">
+         info
+        </span>
+        <!-- 程式碼檢視 -->
+        <!-- 一對一教學 -->
+        會議連結將於預約時間前一天發送至您的電子信箱。
+       </div>
+       <!-- Button -->
+       <a class="" href="index.html">
+        <button class="btn btn-brand-03 slide-right-hover f-center rounded-2 w-100">
+         回到首頁
+         <span class="material-symbols-outlined icon-fill fs-6 fs-md-5 mt-1 ms-1">
+          arrow_forward
+         </span>
+        </button>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </main>
+  <footer class="layout-footer-wrap wrap-lg bg-white">
+   <div class="container f-xl-between">
+    <div class="footer-info-wrap flex-grow-1">
+     <a class="navbar-brand" href="index.html">
+      <picture>
+       <source media="(max-width: 575.98px)" srcset="/Coding-bit/assets/logo-sm-4c04fedc.svg "/>
+       <img alt="logo-image" src="/Coding-bit/assets/logo-da4adea3.svg"/>
+      </picture>
+     </a>
+     <ul class="mt-4">
+      <li class="f-align-center">
+       <span class="material-symbols-outlined fs-6">
+        call
+       </span>
+       <a class="fs-7 underline-hover lh-sm ms-2" href="tel:+0212345678">
+        (02) 1234-5678
+       </a>
+      </li>
+      <li class="f-align-center mt-2">
+       <span class="material-symbols-outlined fs-6">
+        schedule
+       </span>
+       <p class="fs-7 lh-sm ms-2">
+        MON - FRI : 8:30 am - 17:30 pm
+       </p>
+      </li>
+      <li class="f-align-center mt-2">
+       <p class="fs-7 lh-sm">
+        本網站僅供作品參考，並非真實營運販售
+       </p>
+      </li>
+     </ul>
+    </div>
+    <div class="d-flex flex-grow-1 mt-8 mt-lg-0">
+     <ul class="navbar-nav f-column w-50 px-4">
+      <li class="nav-item">
+       <a aria-current="page" class="nav-link underline-hover d-inline-flex link-gray-02 fs-7" href="course-list.html">
+        精選課程
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02 fs-7" href="tutor-list.html">
+        一對一教學
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02 fs-7" href="custom-course.html">
+        課程客製化
+       </a>
+      </li>
+     </ul>
+     <ul class="navbar-nav f-column w-50 px-4">
+      <li class="nav-item">
+       <a aria-current="page" class="nav-link underline-hover d-inline-flex link-gray-02 fs-7" href="help-center.html">
+        幫助中心
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02 fs-7" href="subscription.html">
+        訂閱方案選擇
+       </a>
+      </li>
+     </ul>
+    </div>
+    <ul class="d-flex justify-content-lg-end flex-grow-1 mt-8 mt-lg-0 ms-lg-6">
+     <li>
+      <a class="icon-hover" href="#">
+       <img alt="icon-ins" src="/Coding-bit/assets/icon-ins-purple-75e17ab2.svg"/>
+      </a>
+     </li>
+     <li class="ms-3">
+      <a class="icon-hover" href="#">
+       <img alt="icon-ins" src="/Coding-bit/assets/icon-facebook-purple-e86143aa.svg"/>
+      </a>
+     </li>
+     <li class="ms-3">
+      <a class="icon-hover" href="#">
+       <img alt="icon-ins" src="/Coding-bit/assets/icon-mail-purple-c0b70022.svg"/>
+      </a>
+     </li>
+    </ul>
+   </div>
+  </footer>
+ </body>
+</html>

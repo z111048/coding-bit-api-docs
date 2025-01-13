@@ -1,0 +1,2027 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+  <link href="/Coding-bit/assets/icon-infinite-7978421b.svg" rel="icon" type="image/x-icon"/>
+  <title>
+   卡斯柏 ｜ 預約講師
+  </title>
+  <script crossorigin="" src="/Coding-bit/assets/main-8cc1435a.js" type="module">
+  </script>
+  <script crossorigin="" src="/Coding-bit/assets/add-to-favorite-092af0d2.js" type="module">
+  </script>
+  <script crossorigin="" src="/Coding-bit/assets/show-n-hide-text-799d5ee3.js" type="module">
+  </script>
+  <link href="/Coding-bit/assets/main-9db69f1c.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <!-- <div class="loader-wrapper">
+  <svg width="150px" height="75px" viewBox="0 0 187.3 93.7" preserveAspectRatio="xMidYMid meet">
+    <defs>
+      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color: #d0a2f7; stop-opacity: 1" />
+        <stop offset="50%" style="stop-color: #f1eaff; stop-opacity: 1" />
+        <stop offset="100%" style="stop-color: #645caa; stop-opacity: 1" />
+      </linearGradient>
+    </defs>
+    <path
+      id="outline-bg"
+      d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 -8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+    <path
+      id="outline"
+      d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 -8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+  </svg>
+</div>
+  -->
+  <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
+   <div class="container-lg">
+    <div class="d-flex">
+     <a class="navbar-brand me-10" href="index.html">
+      <picture>
+       <source media="(max-width: 575.98px)" srcset="/Coding-bit/assets/logo-sm-4c04fedc.svg "/>
+       <img alt="logo-image" src="/Coding-bit/assets/logo-da4adea3.svg"/>
+      </picture>
+     </a>
+     <div class="position-relative f-align-center d-none d-xl-flex">
+      <input class="form-control nav-search-desktop" placeholder="搜尋感興趣的課程" type="search"/>
+      <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px">
+       search
+      </span>
+     </div>
+    </div>
+    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler border-0 p-2" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" id="layout-navbar-toggler" type="button">
+     <span class="material-symbols-outlined icon-fill fs-4" id="menu-icon">
+      menu
+     </span>
+     <span class="material-symbols-outlined icon-fill fs-4 d-none" id="close-icon">
+      close
+     </span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+     <ul class="navbar-nav align-items-lg-center">
+      <li class="position-relative f-align-center d-lg-none">
+       <input class="form-control nav-search-mobile" placeholder="搜尋感興趣的課程" type="search"/>
+       <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px">
+        search
+       </span>
+      </li>
+      <li class="nav-item mt-4 mt-lg-0">
+       <a aria-current="page" class="nav-link underline-hover d-inline-flex link-gray-02" href="course-list.html">
+        精選課程
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02" href="tutor-list.html">
+        一對一教學
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02" href="custom-course.html">
+        課程客製化
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02" href="help-center.html">
+        幫助中心
+       </a>
+      </li>
+      <li class="nav-item nav-bottom-btn ms-lg-10">
+       <a href="sign-up.html">
+        <button class="btn btn-outline-brand-03 w-100">
+         登入 / 註冊
+        </button>
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script>
+   document.addEventListener('DOMContentLoaded', function () {
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    const toggler = document.getElementById('layout-navbar-toggler');
+    const layoutNavWrap = document.querySelector('.layout-nav-wrap');
+
+    toggler.addEventListener('click', function () {
+      if (menuIcon.classList.contains('d-none')) {
+        menuIcon.classList.remove('d-none');
+        closeIcon.classList.add('d-none');
+        layoutNavWrap.classList.remove('bg-white');
+        layoutNavWrap.classList.add('bg-transparent');
+
+        document.body.classList.remove('no-scroll');
+      } else {
+        menuIcon.classList.add('d-none');
+        closeIcon.classList.remove('d-none');
+        layoutNavWrap.classList.remove('bg-transparent');
+        layoutNavWrap.classList.add('bg-white');
+
+        document.body.classList.add('no-scroll');
+
+      }
+    });
+  });
+  </script>
+  <div class="tutor-booking">
+   <!-- Mobile Top Cover -->
+   <div class="position-relative d-lg-none">
+    <div class="img-wrapper img-hover-enlarge">
+     <img alt="tutor cover" class="w-100" src="/Coding-bit/assets/course-2-high-res-a9d94f28.jpg" style="max-height: 300px"/>
+    </div>
+    <span class="material-symbols-outlined icon-fill text-white position-absolute top-50 start-50 translate-middle" style="font-size: 56px">
+     play_circle
+    </span>
+    <span class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle" data-favorite="true" role="button" style="background-color: #1e1e1e66">
+     favorite
+    </span>
+   </div>
+   <!-- Main Content -->
+   <main class="container py-lg-13 py-7">
+    <div class="row">
+     <!-- tutor information -->
+     <div class="col-lg-8">
+      <!-- section 1 - overview -->
+      <section class="section">
+       <!-- tutor profile -->
+       <div class="tutor-profile section-component">
+        <div class="flex-shrink-0">
+         <img alt="profile" class="object-fit-cover rounded-circle me-6" src="/Coding-bit/assets/user-1-f526f231.png"/>
+        </div>
+        <div class="flex-grow-1">
+         <h2 class="mb-2 fs-lg-2 fs-4">
+          卡斯伯 Casper
+         </h2>
+         <p class="fs-lg-5 fs-6 text-gray-02">
+          10年經驗的前端工程師
+         </p>
+        </div>
+       </div>
+       <!-- tag list-->
+       <div class="list-x-scroll py-2 section-component">
+        <a class="tag tag-brand-02 fs-8 me-3" href="#">
+         HTML/CSS
+        </a>
+        <a class="tag tag-brand-02 fs-8 me-3" href="#">
+         React
+        </a>
+        <a class="tag tag-brand-02 fs-8" href="#">
+         網頁動畫
+        </a>
+       </div>
+       <!-- tab -->
+       <div class="section-component">
+        <ul class="nav nav-tabs mb-6 list-x-scroll flex-nowrap" id="myTab" role="tablist">
+         <li class="nav-item" role="presentation">
+          <button aria-controls="about-me-tab-pane" aria-selected="true" class="nav-link active" data-bs-target="#about-me-tab-pane" data-bs-toggle="tab" id="about-me-tab" role="tab" type="button">
+           關於我
+          </button>
+         </li>
+         <li class="nav-item" role="presentation">
+          <button aria-controls="teaching-styles-tab-pane" aria-selected="false" class="nav-link" data-bs-target="#teaching-styles-tab-pane" data-bs-toggle="tab" id="teaching-styles-tab" role="tab" type="button">
+           我的教學風格
+          </button>
+         </li>
+         <li class="nav-item" role="presentation">
+          <button aria-controls="resume-tab-pane" aria-selected="false" class="nav-link" data-bs-target="#resume-tab-pane" data-bs-toggle="tab" id="resume-tab" role="tab" type="button">
+           我的履歷
+          </button>
+         </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+         <div aria-labelledby="about-me-tab" class="tab-pane fade show active" id="about-me-tab-pane" role="tabpanel" tabindex="0">
+          <p class="tab-details text-hide">
+           我的專業領域涵蓋了HTML、CSS、JavaScript以及各種前端框架如React。
+           <br/>
+           <br/>
+           在過去的職業生涯中，我參與並領導了多個大型項目，從初期的需求分析到最終的產品交付，均取得了顯著的成果。我擅長解決複雜的技術挑戰，並且對於提升網站效能和優化用戶體驗有著深刻的理解。
+           <br/>
+           <br/>
+           老師從文組專職到前端工程師，所以非常明白同學在學習前端的時候的困難。我曾經教導過百位學生，大家均表示教學清晰容易明白。如果你對前端開發有興趣，或者在學習過程中遇到了困難，歡迎預約我的1對1諮詢。我期待能夠與你分享我的經驗，並幫助你在前端開發的道路上取得更大的進步。
+          </p>
+          <div class="d-flex align-items-center py-3 show-more" role="button">
+           <p class="text-brand-03">
+            更多
+           </p>
+           <span class="material-symbols-outlined icon-fill text-brand-03 align-middle">
+            stat_minus_1
+           </span>
+          </div>
+         </div>
+         <div aria-labelledby="teaching-styles-tab" class="tab-pane fade" id="teaching-styles-tab-pane" role="tabpanel" tabindex="0">
+          <p class="tab-details text-hide">
+           作為一名擁有十年經驗的前端工程師，我的教學風格注重實踐與互動。我相信學習不僅僅是理論，更需要將知識應用到實際項目中。因此，我會設計豐富的實作案例，讓學生在實踐中掌握前端技術。
+           <br/>
+           <br/>
+           在課堂上，我鼓勵學生提問並分享自己的想法，這樣可以促進討論和思維碰撞。我會使用簡單易懂的語言解釋複雜的概念，並通過逐步指導來幫助學生克服挑戰。
+           <br/>
+           <br/>
+           此外，我也非常重視學習資源的多樣性，會推薦優質的文獻、視頻和工具，讓學生能夠在課堂之外進一步探索和學習。我的目標是培養學生的自主學習能力，讓他們在前端開發的旅程中充滿信心與創造力。希望透過我的課程，每位學生都能找到屬於自己的編程熱情！
+          </p>
+          <div class="d-flex align-items-center py-3 show-more" role="button">
+           <p class="text-brand-03">
+            更多
+           </p>
+           <span class="material-symbols-outlined icon-fill text-brand-03 align-middle">
+            stat_minus_1
+           </span>
+          </div>
+         </div>
+         <div aria-labelledby="resume-tab" class="tab-pane fade" id="resume-tab-pane" role="tabpanel" tabindex="0">
+          <div class="row tutor-booking-resume">
+           <div class="col-md-3 col-5">
+            <div class="list-group" id="list-resume-tab" role="tablist">
+             <a aria-controls="list-work-experience" class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-work-experience" id="list-work-experience-list" role="tab">
+              工作經歷
+             </a>
+             <a aria-controls="list-education" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-education" id="list-education-list" role="tab">
+              學歷
+             </a>
+             <a aria-controls="list-certificate" class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-certificate" id="list-certificate-list" role="tab">
+              證書
+             </a>
+            </div>
+           </div>
+           <div class="col-md-9 col-7">
+            <div class="tab-content" id="nav-tabContent">
+             <div aria-labelledby="list-work-experience-list" class="tab-pane fade show active" id="list-work-experience" role="tabpanel">
+              <div class="d-md-flex mb-5">
+               <p class="date me-5">
+                2020 - 2024
+               </p>
+               <div>
+                <p class="fw-bold">
+                 資深前端工程師
+                </p>
+                <p class="text-gray-03">
+                 TutorABC
+                </p>
+               </div>
+              </div>
+              <div class="d-md-flex mb-5">
+               <p class="date me-5">
+                2015 - 2020
+               </p>
+               <div>
+                <p class="fw-bold">
+                 前端工程師
+                </p>
+                <p class="text-gray-03">
+                 KKDay
+                </p>
+               </div>
+              </div>
+              <div class="d-md-flex mb-5">
+               <p class="date me-5">
+                2011 - 2015
+               </p>
+               <div>
+                <p class="fw-bold">
+                 前端工程師
+                </p>
+                <p class="text-gray-03">
+                 Taiwan Tech
+                </p>
+               </div>
+              </div>
+             </div>
+             <div aria-labelledby="list-education-list" class="tab-pane fade" id="list-education" role="tabpanel">
+              <div class="d-md-flex mb-5">
+               <p class="date me-5">
+                2005 - 2009
+               </p>
+               <div>
+                <p class="fw-bold">
+                 國立臺灣大學
+                </p>
+                <p class="text-gray-03">
+                 外國語文學系學士學位
+                </p>
+                <p class="text-success d-flex verification fs-7 mt-1">
+                 <span class="material-symbols-outlined icon-fill align-middle me-1 fs-5">
+                  verified
+                 </span>
+                 學歷認證
+                </p>
+               </div>
+              </div>
+             </div>
+             <div aria-labelledby="list-certificate-list" class="tab-pane fade" id="list-certificate" role="tabpanel">
+              <div class="d-md-flex mb-5">
+               <p class="date me-5">
+                2024 - 2027
+               </p>
+               <div>
+                <p class="fw-bold">
+                 AWS Certified Cloud Practitioner
+                </p>
+                <p class="text-gray-03">
+                 Amazon Web Services (AWS)
+                </p>
+                <p class="text-success d-flex verification fs-7 mt-1">
+                 <span class="material-symbols-outlined icon-fill align-middle me-1 fs-5">
+                  verified
+                 </span>
+                 證書認證
+                </p>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <!-- statistics -->
+        <div class="row row-cols-2 row-cols-lg-5 g-3 mt-5">
+         <div class="col">
+          <div class="stat-overview-card">
+           <h4 class="text-brand-03">
+            200
+           </h4>
+           <p class="fs-7">
+            學生
+           </p>
+          </div>
+         </div>
+         <div class="col">
+          <div class="stat-overview-card">
+           <h4 class="text-brand-03">
+            250
+           </h4>
+           <p class="fs-7">
+            課堂
+           </p>
+          </div>
+         </div>
+         <div class="col">
+          <div class="stat-overview-card">
+           <h4 class="text-brand-03">
+            10
+           </h4>
+           <p class="fs-7">
+            影片
+           </p>
+          </div>
+         </div>
+         <div class="col">
+          <div class="stat-overview-card">
+           <h4 class="text-brand-03">
+            100%
+           </h4>
+           <p class="fs-7">
+            出席率
+           </p>
+          </div>
+         </div>
+         <div class="col">
+          <div class="stat-overview-card">
+           <h4 class="text-brand-03">
+            100%
+           </h4>
+           <p class="fs-7">
+            回覆率
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+      <!-- section 2 - video list -->
+      <section class="section">
+       <div class="section-component f-between-center">
+        <h4>
+         講師影片
+        </h4>
+        <a class="text-brand-03 d-flex slide-right-hover" data-show="false" href="tutor-info.html">
+         <p>
+          更多
+         </p>
+         <span class="material-symbols-outlined icon-fill">
+          arrow_forward
+         </span>
+        </a>
+       </div>
+       <div class="swiper freeTipShortsSwiper">
+        <div class="swiper-wrapper">
+         <div class="swiper-slide">
+          <a class="course-card card-column" href="video-details.html">
+           <div class="card gradient-border img-hover-enlarge p-lg-6 p-4 h-100">
+            <div class="overflow-hidden img-wrapper rounded position-relative">
+             <img alt="course-image" class="card-img-top cover-img rounded" src="/Coding-bit/assets/course-12-316c9f0b.png"/>
+            </div>
+            <span class="course-category-tag opacity-75 position-absolute">
+             免費影片
+            </span>
+            <div class="card-body p-0 mt-3 mt-lg-4 f-column-between">
+             <div>
+              <h3 class="card-title fs-6 fs-lg-5">
+               快速掌握html標籤
+              </h3>
+              <p class="card-text fs-7 fs-lg-6 mt-1 mt-lg-2">
+               卡斯伯 Casper
+              </p>
+             </div>
+             <div class="f-between-center">
+              <div class="f-align-center mt-1 mt-lg-2">
+               <div class="f-center">
+                <span class="material-symbols-outlined fs-5 me-1">
+                 schedule
+                </span>
+                <p class="fs-7 fs-lg-6">
+                 2分18秒
+                </p>
+               </div>
+               <div class="f-center ms-2">
+                <span class="material-symbols-outlined fs-5 me-1">
+                 group
+                </span>
+                <p class="fs-7 fs-lg-6">
+                 3,581
+                </p>
+               </div>
+              </div>
+              <p class="f-center text-brand-03 fs-7 fs-lg-6">
+               <span class="material-symbols-outlined icon-fill text-brand-01 fs-6 fs-lg-5 me-1">
+                kid_star
+               </span>
+               4.9
+              </p>
+             </div>
+            </div>
+           </div>
+          </a>
+         </div>
+         <div class="swiper-slide">
+          <a class="course-card card-column" href="video-details.html">
+           <div class="card gradient-border img-hover-enlarge p-lg-6 p-4 h-100">
+            <div class="overflow-hidden img-wrapper rounded position-relative">
+             <img alt="course-image" class="card-img-top cover-img rounded" src="/Coding-bit/assets/course-13-68a41ae2.png"/>
+            </div>
+            <span class="course-category-tag opacity-75 position-absolute">
+             免費影片
+            </span>
+            <div class="card-body p-0 mt-3 mt-lg-4 f-column-between">
+             <div>
+              <h3 class="card-title fs-6 fs-lg-5">
+               html載入外部圖片方式
+              </h3>
+              <p class="card-text fs-7 fs-lg-6 mt-1 mt-lg-2">
+               卡斯伯 Casper
+              </p>
+             </div>
+             <div class="f-between-center">
+              <div class="f-align-center mt-1 mt-lg-2">
+               <div class="f-center">
+                <span class="material-symbols-outlined fs-5 me-1">
+                 schedule
+                </span>
+                <p class="fs-7 fs-lg-6">
+                 3分56秒
+                </p>
+               </div>
+               <div class="f-center ms-2">
+                <span class="material-symbols-outlined fs-5 me-1">
+                 group
+                </span>
+                <p class="fs-7 fs-lg-6">
+                 1,589
+                </p>
+               </div>
+              </div>
+              <p class="f-center text-brand-03 fs-7 fs-lg-6">
+               <span class="material-symbols-outlined icon-fill text-brand-01 fs-6 fs-lg-5 me-1">
+                kid_star
+               </span>
+               4.8
+              </p>
+             </div>
+            </div>
+           </div>
+          </a>
+         </div>
+        </div>
+       </div>
+      </section>
+      <!-- section 3 - timetable -->
+      <section class="section schedule">
+       <div class="section-component f-between-center">
+        <h4>
+         時間表
+        </h4>
+        <a class="text-brand-03 d-flex slide-right-hover" data-show="false" href="#">
+         <p>
+          更多
+         </p>
+         <span class="material-symbols-outlined icon-fill">
+          arrow_forward
+         </span>
+        </a>
+       </div>
+       <div class="f-between-center mb-5">
+        <span class="prev material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">
+         arrow_back
+        </span>
+        <h5 class="text-brand-03 week fw-medium">
+         2024/08/01 - 2024/08/07
+        </h5>
+        <span class="next material-symbols-outlined icon-fill bg-brand-02 text-brand-01 rounded-circle p-2 align-middle">
+         arrow_forward
+        </span>
+       </div>
+       <div>
+        <div class="row row-cols-7 available-date-time g-0">
+         <div class="col">
+          <div class="date f-center flex-column">
+           <h6>
+            星期四
+           </h6>
+           <p>
+            08/01
+           </p>
+          </div>
+          <div>
+           <ul class="times f-center flex-column">
+            <li class="time disabled">
+             08:00
+            </li>
+            <li class="time">
+             09:00
+            </li>
+            <li class="time disabled">
+             10:00
+            </li>
+            <li class="time">
+             11:00
+            </li>
+            <li class="time">
+             12:00
+            </li>
+            <li class="time">
+             13:00
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="col">
+          <div class="date f-center flex-column">
+           <h6>
+            星期五
+           </h6>
+           <p>
+            08/02
+           </p>
+          </div>
+          <div>
+           <ul class="times f-center flex-column">
+            <li class="time">
+             16:00
+            </li>
+            <li class="time">
+             17:00
+            </li>
+            <li class="time">
+             18:00
+            </li>
+            <li class="time">
+             19:00
+            </li>
+            <li class="time disabled">
+             20:00
+            </li>
+            <li class="time">
+             21:00
+            </li>
+            <li class="time">
+             22:00
+            </li>
+            <li class="time disabled">
+             23:00
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="col">
+          <div class="date f-center flex-column">
+           <h6>
+            星期六
+           </h6>
+           <p>
+            08/02
+           </p>
+          </div>
+          <div>
+           <ul class="times f-center flex-column">
+            <li class="time">
+             10:00
+            </li>
+            <li class="time">
+             11:00
+            </li>
+            <li class="time disabled">
+             12:00
+            </li>
+            <li class="time">
+             13:00
+            </li>
+            <li class="time disabled">
+             14:00
+            </li>
+            <li class="time">
+             17:00
+            </li>
+            <li class="time">
+             18:00
+            </li>
+            <li class="time disabled">
+             19:00
+            </li>
+            <li class="time disabled">
+             20:00
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="col">
+          <div class="date f-center flex-column disabled">
+           <h6>
+            星期日
+           </h6>
+           <p>
+            08/04
+           </p>
+          </div>
+          <div>
+           <ul class="times f-center flex-column">
+           </ul>
+          </div>
+         </div>
+         <div class="col">
+          <div class="date f-center flex-column">
+           <h6>
+            星期一
+           </h6>
+           <p>
+            08/05
+           </p>
+          </div>
+          <div>
+           <ul class="times f-center flex-column">
+            <li class="time">
+             13:00
+            </li>
+            <li class="time disabled">
+             14:00
+            </li>
+            <li class="time">
+             17:00
+            </li>
+            <li class="time">
+             18:00
+            </li>
+            <li class="time">
+             19:00
+            </li>
+            <li class="time">
+             20:00
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="col">
+          <div class="date f-center flex-column">
+           <h6>
+            星期二
+           </h6>
+           <p>
+            08/06
+           </p>
+          </div>
+          <div>
+           <ul class="times f-center flex-column">
+            <li class="time">
+             13:00
+            </li>
+            <li class="time">
+             14:00
+            </li>
+            <li class="time">
+             17:00
+            </li>
+            <li class="time">
+             18:00
+            </li>
+            <li class="time">
+             19:00
+            </li>
+            <li class="time">
+             20:00
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="col">
+          <div class="date f-center flex-column">
+           <h6>
+            星期三
+           </h6>
+           <p>
+            08/07
+           </p>
+          </div>
+          <div>
+           <ul class="times f-center flex-column">
+            <li class="time">
+             08:00
+            </li>
+           </ul>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+       </div>
+      </section>
+      <!-- section 4 - student comment -->
+      <section class="section student-comment">
+       <div class="section-component f-between-center">
+        <h4>
+         學生評價
+        </h4>
+        <a class="text-brand-03 d-flex slide-right-hover" data-bs-target="#studentCommentModal" data-bs-toggle="modal" href="#">
+         <p>
+          更多
+         </p>
+         <span class="material-symbols-outlined icon-fill">
+          arrow_forward
+         </span>
+        </a>
+       </div>
+       <div class="row row-cols-lg-2 row-cols-1 g-lg-4 g-2">
+        <div class="col">
+         <div class="card p-4">
+          <div class="row justify-content-center">
+           <div class="col-lg-5 f-center flex-column">
+            <h4 class="text-brand-03 mb-2">
+             4.9
+            </h4>
+            <div class="f-center mb-2">
+             <img alt="" class="text-brand-01" height="16" src="/Coding-bit/assets/kid_star-55ba9aed.svg" width="16">
+              <img alt="" height="16" src="/Coding-bit/assets/kid_star-55ba9aed.svg" width="16">
+               <img alt="" height="16" src="/Coding-bit/assets/kid_star-55ba9aed.svg" width="16"/>
+               <img alt="" height="16" src="/Coding-bit/assets/kid_star-55ba9aed.svg" width="16"/>
+               <img alt="" height="16" src="/Coding-bit/assets/kid_star_half_purple-8b85d5e5.svg" width="16"/>
+              </img>
+             </img>
+            </div>
+            <p class="fs-7">
+             111則評論
+            </p>
+           </div>
+           <div class="col-lg-7">
+            <ol class="ps-0 mb-0">
+             <!-- 5星 -->
+             <li class="f-between-center">
+              <p class="fs-7 me-3">
+               5 星
+              </p>
+              <div aria-label="Basic example" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress flex-grow-1" role="progressbar" style="height: 8px">
+               <div class="progress-bar" style="width: 85%">
+               </div>
+              </div>
+              <p class="class=fs-7 text-gray-03">
+               108
+              </p>
+             </li>
+             <!-- 4星 -->
+             <li class="f-between-center">
+              <p class="fs-7 me-3">
+               4 星
+              </p>
+              <div aria-label="Basic example" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress flex-grow-1" role="progressbar" style="height: 8px">
+               <div class="progress-bar" style="width: 15%">
+               </div>
+              </div>
+              <p class="class=fs-7 text-gray-03">
+               3
+              </p>
+             </li>
+             <!-- 3星 -->
+             <li class="f-between-center">
+              <p class="fs-7 me-3">
+               3 星
+              </p>
+              <div aria-label="Basic example" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress flex-grow-1" role="progressbar" style="height: 8px">
+               <div class="progress-bar" style="width: 0%">
+               </div>
+              </div>
+              <p class="class=fs-7 text-gray-03">
+               0
+              </p>
+             </li>
+             <!-- 2星 -->
+             <li class="f-between-center">
+              <p class="fs-7 me-3">
+               2 星
+              </p>
+              <div aria-label="Basic example" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress flex-grow-1" role="progressbar" style="height: 8px">
+               <div class="progress-bar" style="width: 0%">
+               </div>
+              </div>
+              <p class="class=fs-7 text-gray-03">
+               0
+              </p>
+             </li>
+             <!-- 1星 -->
+             <li class="f-between-center">
+              <p class="fs-7 me-3">
+               1 星
+              </p>
+              <div aria-label="Basic example" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress flex-grow-1" role="progressbar" style="height: 8px">
+               <div class="progress-bar" style="width: 0%">
+               </div>
+              </div>
+              <p class="class=fs-7 text-gray-03">
+               0
+              </p>
+             </li>
+            </ol>
+           </div>
+          </div>
+         </div>
+        </div>
+        <!-- 1st Comment -->
+        <div class="col">
+         <div class="student-comment-card card p-4 h-100">
+          <div>
+           <img alt="profile" class="object-fit-cover rounded-circle me-4 avatar" src="/Coding-bit/assets/user-2-33082ac6.png"/>
+          </div>
+          <div class="flex-grow-1">
+           <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+            阮永庭
+           </h6>
+           <p class="comment-details mb-1">
+            找了老師檢視我的程式碼，我才發現我的code原來可以更簡潔。老師有問必答，而且非常專業，跟著老師一步一步的，能很快感覺到進步。
+           </p>
+           <p class="timestamp text-gray-03 fs-7 mt-auto">
+            2024-07-31 10:30
+           </p>
+          </div>
+         </div>
+        </div>
+        <!-- 2nd Comment -->
+        <div class="col">
+         <div class="student-comment-card card p-4 h-100">
+          <div>
+           <img alt="profile" class="object-fit-cover rounded-circle me-4 avatar" src="/Coding-bit/assets/user-3-ee46b278.png"/>
+          </div>
+          <div class="flex-grow-1">
+           <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+            黄詠琪
+           </h6>
+           <p class="comment-details mb-1">
+            所有我的問題都得到了解決。謝謝老師。
+           </p>
+           <p class="timestamp text-gray-03 fs-7 mt-auto">
+            2024-08-01 10:30
+           </p>
+          </div>
+         </div>
+        </div>
+        <!-- 3rd Comment -->
+        <div class="col">
+         <div class="student-comment-card card p-4 h-100">
+          <div>
+           <img alt="profile" class="object-fit-cover rounded-circle me-4 avatar" src="/Coding-bit/assets/user-4-e0a6fbf8.png"/>
+          </div>
+          <div class="flex-grow-1">
+           <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+            鍾宗仁
+           </h6>
+           <p class="comment-details mb-1">
+            非常感謝老師。我的問題積累很長的時間，一直不明白，但是老師很有耐心的教導我，我終於明白了原理。下一次還有問題，還是會找老師！
+           </p>
+           <p class="timestamp text-gray-03 fs-7 mt-auto">
+            2024-08-07 10:30
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+      <!-- section 5 - tutor recommendation -->
+      <section class="section mb-0">
+       <div class="section-component f-between-center">
+        <h4>
+         推薦講師
+        </h4>
+        <a class="text-brand-03 d-flex slide-right-hover" href="tutor-list.html">
+         <p>
+          更多
+         </p>
+         <span class="material-symbols-outlined icon-fill">
+          arrow_forward
+         </span>
+        </a>
+       </div>
+       <!-- desktop -->
+       <ul class="row row-cols-lg-2 g-lg-4 d-none d-lg-flex">
+        <!-- tutor1 -->
+        <li class="tutor-card col">
+         <div class="card p-lg-5 p-md-4 p-4 img-hover-enlarge h-100" style="box-shadow: 0px 25px 50px -12px #0000001F;
+">
+          <div class="position-relative mb-lg-5 mb-4">
+           <div class="img-wrapper rounded-2">
+            <!-- dynamic image path -->
+            <img alt="course-1" class="card-img-top cover-img rounded-2 object-fit-cover" src="/Coding-bit/assets/course-1-3de1fc2e.png"/>
+           </div>
+           <!-- dynamic favorite status -->
+           <span class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle" data-favorite="true" role="button" style="background-color: #1e1e1e66">
+            favorite
+           </span>
+          </div>
+          <div class="card-body p-0 d-flex flex-column">
+           <div class="mb-5 f-between-start">
+            <div class="f-center">
+             <!-- dynamic tutor profile -->
+             <img alt="" class="object-cover-fit rounded-circle me-2" height="45" src="/Coding-bit/assets/user-5-cb87930d.png" width="45"/>
+             <div>
+              <!-- dynamic tutor name -->
+              <h5 class="card-title fw-medium text-gray-01 fs-lg-6 fs-5 mb-1">
+               平凡老師 - 李東霖
+              </h5>
+              <!-- dynamic title-->
+              <p class="text-gray-02 fs-8">
+               WordPress 工程師
+              </p>
+             </div>
+            </div>
+            <p class="f-center text-brand-03">
+             <span class="material-symbols-outlined icon-fill text-brand-01 me-1">
+              kid_star
+             </span>
+             <!-- dynamic score -->
+             4.9
+            </p>
+           </div>
+           <!-- dynamic tag loop -->
+           <div class="mb-auto">
+            <div class="">
+             <div class="d-inline-block mb-5">
+              <a class="tag tag-brand-02 fs-8" href="#">
+               WordPress 網站架設
+              </a>
+             </div>
+            </div>
+           </div>
+           <div class="mb-lg-6 mb-5 mt-auto">
+            <p class="text-gray-02 fs-7 fs-lg-6">
+             每小時收費
+            </p>
+            <!-- dynamic price -->
+            <h2 class="text-brand-03 fs-lg-2 fs-3">
+             NT $ 250
+            </h2>
+           </div>
+           <a class="btn btn-brand-03 w-100 slide-right-hover" href="tutor-booking.html">
+            <p class="f-center me-1">
+             立即預約
+             <span class="material-symbols-outlined">
+              arrow_forward
+             </span>
+            </p>
+           </a>
+          </div>
+         </div>
+        </li>
+        <!-- tutor2 -->
+        <li class="tutor-card col">
+         <div class="card p-lg-5 p-md-4 p-4 img-hover-enlarge h-100" style="box-shadow: 0px 25px 50px -12px #0000001F;
+">
+          <div class="position-relative mb-lg-5 mb-4">
+           <div class="img-wrapper rounded-2">
+            <!-- dynamic image path -->
+            <img alt="course-5" class="card-img-top cover-img rounded-2 object-fit-cover" src="/Coding-bit/assets/course-5-69bfc947.png">
+            </img>
+           </div>
+           <!-- dynamic favorite status -->
+           <span class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle" data-favorite="false" role="button" style="background-color: #1e1e1e66">
+            favorite
+           </span>
+          </div>
+          <div class="card-body p-0 d-flex flex-column">
+           <div class="mb-5 f-between-start">
+            <div class="f-center">
+             <!-- dynamic tutor profile -->
+             <img alt="" class="object-cover-fit rounded-circle me-2" height="45" src="/Coding-bit/assets/user-6-aff8550b.png" width="45"/>
+             <div>
+              <!-- dynamic tutor name -->
+              <h5 class="card-title fw-medium text-gray-01 fs-lg-6 fs-5 mb-1">
+               米克老師
+              </h5>
+              <!-- dynamic title-->
+              <p class="text-gray-02 fs-8">
+               喜歡寫code的前端工程師
+              </p>
+             </div>
+            </div>
+            <p class="f-center text-brand-03">
+             <span class="material-symbols-outlined icon-fill text-brand-01 me-1">
+              kid_star
+             </span>
+             <!-- dynamic score -->
+             3.4
+            </p>
+           </div>
+           <!-- dynamic tag loop -->
+           <div class="mb-auto">
+            <div class="">
+             <div class="d-inline-block mb-5">
+              <a class="tag tag-brand-02 fs-8" href="#">
+               製作 RWD 網站
+              </a>
+             </div>
+             <div class="d-inline-block mb-5">
+              <a class="tag tag-brand-02 fs-8" href="#">
+               Bootstrap
+              </a>
+             </div>
+            </div>
+           </div>
+           <div class="mb-lg-6 mb-5 mt-auto">
+            <p class="text-gray-02 fs-7 fs-lg-6">
+             每小時收費
+            </p>
+            <!-- dynamic price -->
+            <h2 class="text-brand-03 fs-lg-2 fs-3">
+             NT $ 100
+            </h2>
+           </div>
+           <a class="btn btn-brand-03 w-100 slide-right-hover" href="tutor-booking.html">
+            <p class="f-center me-1">
+             立即預約
+             <span class="material-symbols-outlined">
+              arrow_forward
+             </span>
+            </p>
+           </a>
+          </div>
+         </div>
+        </li>
+        <!-- tutor3 -->
+        <li class="tutor-card col">
+         <div class="card p-lg-5 p-md-4 p-4 img-hover-enlarge h-100" style="box-shadow: 0px 25px 50px -12px #0000001F;
+">
+          <div class="position-relative mb-lg-5 mb-4">
+           <div class="img-wrapper rounded-2">
+            <!-- dynamic image path -->
+            <img alt="course-8" class="card-img-top cover-img rounded-2 object-fit-cover" src="/Coding-bit/assets/course-8-9d6b2514.png">
+            </img>
+           </div>
+           <!-- dynamic favorite status -->
+           <span class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle" data-favorite="false" role="button" style="background-color: #1e1e1e66">
+            favorite
+           </span>
+          </div>
+          <div class="card-body p-0 d-flex flex-column">
+           <div class="mb-5 f-between-start">
+            <div class="f-center">
+             <!-- dynamic tutor profile -->
+             <img alt="" class="object-cover-fit rounded-circle me-2" height="45" src="/Coding-bit/assets/user-7-b073bdd4.png" width="45"/>
+             <div>
+              <!-- dynamic tutor name -->
+              <h5 class="card-title fw-medium text-gray-01 fs-lg-6 fs-5 mb-1">
+               Pong Pong
+              </h5>
+              <!-- dynamic title-->
+              <p class="text-gray-02 fs-8">
+               台大資訊訓練班首席老師
+              </p>
+             </div>
+            </div>
+            <p class="f-center text-brand-03">
+             <span class="material-symbols-outlined icon-fill text-brand-01 me-1">
+              kid_star
+             </span>
+             <!-- dynamic score -->
+             4.3
+            </p>
+           </div>
+           <!-- dynamic tag loop -->
+           <div class="mb-auto">
+            <div class="">
+             <div class="d-inline-block mb-5">
+              <a class="tag tag-brand-02 fs-8" href="#">
+               Python
+              </a>
+             </div>
+             <div class="d-inline-block mb-5">
+              <a class="tag tag-brand-02 fs-8" href="#">
+               Python Flask
+              </a>
+             </div>
+            </div>
+           </div>
+           <div class="mb-lg-6 mb-5 mt-auto">
+            <p class="text-gray-02 fs-7 fs-lg-6">
+             每小時收費
+            </p>
+            <!-- dynamic price -->
+            <h2 class="text-brand-03 fs-lg-2 fs-3">
+             NT $ 530
+            </h2>
+           </div>
+           <a class="btn btn-brand-03 w-100 slide-right-hover" href="tutor-booking.html">
+            <p class="f-center me-1">
+             立即預約
+             <span class="material-symbols-outlined">
+              arrow_forward
+             </span>
+            </p>
+           </a>
+          </div>
+         </div>
+        </li>
+        <!-- tutor4 -->
+        <li class="tutor-card col">
+         <div class="card p-lg-5 p-md-4 p-4 img-hover-enlarge h-100" style="box-shadow: 0px 25px 50px -12px #0000001F;
+">
+          <div class="position-relative mb-lg-5 mb-4">
+           <div class="img-wrapper rounded-2">
+            <!-- dynamic image path -->
+            <img alt="course-3" class="card-img-top cover-img rounded-2 object-fit-cover" src="/Coding-bit/assets/course-3-929f59ab.png">
+            </img>
+           </div>
+           <!-- dynamic favorite status -->
+           <span class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle" data-favorite="true" role="button" style="background-color: #1e1e1e66">
+            favorite
+           </span>
+          </div>
+          <div class="card-body p-0 d-flex flex-column">
+           <div class="mb-5 f-between-start">
+            <div class="f-center">
+             <!-- dynamic tutor profile -->
+             <img alt="" class="object-cover-fit rounded-circle me-2" height="45" src="/Coding-bit/assets/user-10-2614d161.png" width="45"/>
+             <div>
+              <!-- dynamic tutor name -->
+              <h5 class="card-title fw-medium text-gray-01 fs-lg-6 fs-5 mb-1">
+               Alan Lee
+              </h5>
+              <!-- dynamic title-->
+              <p class="text-gray-02 fs-8">
+               熱愛遊戲的熱血青年
+              </p>
+             </div>
+            </div>
+            <p class="f-center text-brand-03">
+             <span class="material-symbols-outlined icon-fill text-brand-01 me-1">
+              kid_star
+             </span>
+             <!-- dynamic score -->
+             4.3
+            </p>
+           </div>
+           <!-- dynamic tag loop -->
+           <div class="mb-auto">
+            <div class="">
+             <div class="d-inline-block mb-5">
+              <a class="tag tag-brand-02 fs-8" href="#">
+               Unity
+              </a>
+             </div>
+             <div class="d-inline-block mb-5">
+              <a class="tag tag-brand-02 fs-8" href="#">
+               2D遊戲製作
+              </a>
+             </div>
+            </div>
+           </div>
+           <div class="mb-lg-6 mb-5 mt-auto">
+            <p class="text-gray-02 fs-7 fs-lg-6">
+             每小時收費
+            </p>
+            <!-- dynamic price -->
+            <h2 class="text-brand-03 fs-lg-2 fs-3">
+             NT $ 250
+            </h2>
+           </div>
+           <a class="btn btn-brand-03 w-100 slide-right-hover" href="tutor-booking.html">
+            <p class="f-center me-1">
+             立即預約
+             <span class="material-symbols-outlined">
+              arrow_forward
+             </span>
+            </p>
+           </a>
+          </div>
+         </div>
+        </li>
+       </ul>
+       <!-- mobile -->
+       <div class="swiper tutor-card-swiper d-block d-lg-none">
+        <div class="swiper-wrapper mb-10 py-5">
+         <div class="swiper-slide">
+          <li class="tutor-card col">
+           <div class="card p-lg-5 p-md-4 p-4 img-hover-enlarge h-100" style="box-shadow: 0px 25px 50px -12px #0000001F;
+">
+            <div class="position-relative mb-lg-5 mb-4">
+             <div class="img-wrapper rounded-2">
+              <!-- dynamic image path -->
+              <img alt="course-1" class="card-img-top cover-img rounded-2 object-fit-cover" src="/Coding-bit/assets/course-1-3de1fc2e.png">
+              </img>
+             </div>
+             <!-- dynamic favorite status -->
+             <span class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle" data-favorite="true" role="button" style="background-color: #1e1e1e66">
+              favorite
+             </span>
+            </div>
+            <div class="card-body p-0 d-flex flex-column">
+             <div class="mb-5 f-between-start">
+              <div class="f-center">
+               <!-- dynamic tutor profile -->
+               <img alt="" class="object-cover-fit rounded-circle me-2" height="45" src="/Coding-bit/assets/user-5-cb87930d.png" width="45"/>
+               <div>
+                <!-- dynamic tutor name -->
+                <h5 class="card-title fw-medium text-gray-01 fs-lg-6 fs-5 mb-1">
+                 平凡老師 - 李東霖
+                </h5>
+                <!-- dynamic title-->
+                <p class="text-gray-02 fs-8">
+                 WordPress 工程師
+                </p>
+               </div>
+              </div>
+              <p class="f-center text-brand-03">
+               <span class="material-symbols-outlined icon-fill text-brand-01 me-1">
+                kid_star
+               </span>
+               <!-- dynamic score -->
+               4.9
+              </p>
+             </div>
+             <!-- dynamic tag loop -->
+             <div class="mb-auto">
+              <div class="">
+               <div class="d-inline-block mb-5">
+                <a class="tag tag-brand-02 fs-8" href="#">
+                 WordPress網站架設
+                </a>
+               </div>
+              </div>
+             </div>
+             <div class="mb-lg-6 mb-5 mt-auto">
+              <p class="text-gray-02 fs-7 fs-lg-6">
+               每小時收費
+              </p>
+              <!-- dynamic price -->
+              <h2 class="text-brand-03 fs-lg-2 fs-3">
+               NT $ 250
+              </h2>
+             </div>
+             <a class="btn btn-brand-03 w-100 slide-right-hover" href="tutor-booking.html">
+              <p class="f-center me-1">
+               立即預約
+               <span class="material-symbols-outlined">
+                arrow_forward
+               </span>
+              </p>
+             </a>
+            </div>
+           </div>
+          </li>
+         </div>
+         <div class="swiper-slide">
+          <li class="tutor-card col">
+           <div class="card p-lg-5 p-md-4 p-4 img-hover-enlarge h-100" style="box-shadow: 0px 25px 50px -12px #0000001F;
+">
+            <div class="position-relative mb-lg-5 mb-4">
+             <div class="img-wrapper rounded-2">
+              <!-- dynamic image path -->
+              <img alt="course-5" class="card-img-top cover-img rounded-2 object-fit-cover" src="/Coding-bit/assets/course-5-69bfc947.png">
+              </img>
+             </div>
+             <!-- dynamic favorite status -->
+             <span class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle" data-favorite="false" role="button" style="background-color: #1e1e1e66">
+              favorite
+             </span>
+            </div>
+            <div class="card-body p-0 d-flex flex-column">
+             <div class="mb-5 f-between-start">
+              <div class="f-center">
+               <!-- dynamic tutor profile -->
+               <img alt="" class="object-cover-fit rounded-circle me-2" height="45" src="/Coding-bit/assets/user-6-aff8550b.png" width="45"/>
+               <div>
+                <!-- dynamic tutor name -->
+                <h5 class="card-title fw-medium text-gray-01 fs-lg-6 fs-5 mb-1">
+                 米克老師
+                </h5>
+                <!-- dynamic title-->
+                <p class="text-gray-02 fs-8">
+                 喜歡寫code的前端工程師
+                </p>
+               </div>
+              </div>
+              <p class="f-center text-brand-03">
+               <span class="material-symbols-outlined icon-fill text-brand-01 me-1">
+                kid_star
+               </span>
+               <!-- dynamic score -->
+               3.4
+              </p>
+             </div>
+             <!-- dynamic tag loop -->
+             <div class="mb-auto">
+              <div class="">
+               <div class="d-inline-block mb-5">
+                <a class="tag tag-brand-02 fs-8" href="#">
+                 製作 RWD 網站
+                </a>
+               </div>
+               <div class="d-inline-block mb-5">
+                <a class="tag tag-brand-02 fs-8" href="#">
+                 Bootstrap
+                </a>
+               </div>
+              </div>
+             </div>
+             <div class="mb-lg-6 mb-5 mt-auto">
+              <p class="text-gray-02 fs-7 fs-lg-6">
+               每小時收費
+              </p>
+              <!-- dynamic price -->
+              <h2 class="text-brand-03 fs-lg-2 fs-3">
+               NT $ 100
+              </h2>
+             </div>
+             <a class="btn btn-brand-03 w-100 slide-right-hover" href="tutor-booking.html">
+              <p class="f-center me-1">
+               立即預約
+               <span class="material-symbols-outlined">
+                arrow_forward
+               </span>
+              </p>
+             </a>
+            </div>
+           </div>
+          </li>
+         </div>
+         <div class="swiper-slide">
+          <li class="tutor-card col">
+           <div class="card p-lg-5 p-md-4 p-4 img-hover-enlarge h-100" style="box-shadow: 0px 25px 50px -12px #0000001F;
+">
+            <div class="position-relative mb-lg-5 mb-4">
+             <div class="img-wrapper rounded-2">
+              <!-- dynamic image path -->
+              <img alt="course-8" class="card-img-top cover-img rounded-2 object-fit-cover" src="/Coding-bit/assets/course-8-9d6b2514.png">
+              </img>
+             </div>
+             <!-- dynamic favorite status -->
+             <span class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle" data-favorite="false" role="button" style="background-color: #1e1e1e66">
+              favorite
+             </span>
+            </div>
+            <div class="card-body p-0 d-flex flex-column">
+             <div class="mb-5 f-between-start">
+              <div class="f-center">
+               <!-- dynamic tutor profile -->
+               <img alt="" class="object-cover-fit rounded-circle me-2" height="45" src="/Coding-bit/assets/user-7-b073bdd4.png" width="45"/>
+               <div>
+                <!-- dynamic tutor name -->
+                <h5 class="card-title fw-medium text-gray-01 fs-lg-6 fs-5 mb-1">
+                 Pong Pong
+                </h5>
+                <!-- dynamic title-->
+                <p class="text-gray-02 fs-8">
+                 台大資訊訓練班首席老師
+                </p>
+               </div>
+              </div>
+              <p class="f-center text-brand-03">
+               <span class="material-symbols-outlined icon-fill text-brand-01 me-1">
+                kid_star
+               </span>
+               <!-- dynamic score -->
+               4.3
+              </p>
+             </div>
+             <!-- dynamic tag loop -->
+             <div class="mb-auto">
+              <div class="">
+               <div class="d-inline-block mb-5">
+                <a class="tag tag-brand-02 fs-8" href="#">
+                 Python
+                </a>
+               </div>
+               <div class="d-inline-block mb-5">
+                <a class="tag tag-brand-02 fs-8" href="#">
+                 Python Flask
+                </a>
+               </div>
+              </div>
+             </div>
+             <div class="mb-lg-6 mb-5 mt-auto">
+              <p class="text-gray-02 fs-7 fs-lg-6">
+               每小時收費
+              </p>
+              <!-- dynamic price -->
+              <h2 class="text-brand-03 fs-lg-2 fs-3">
+               NT $ 530
+              </h2>
+             </div>
+             <a class="btn btn-brand-03 w-100 slide-right-hover" href="tutor-booking.html">
+              <p class="f-center me-1">
+               立即預約
+               <span class="material-symbols-outlined">
+                arrow_forward
+               </span>
+              </p>
+             </a>
+            </div>
+           </div>
+          </li>
+         </div>
+         <div class="swiper-slide">
+          <li class="tutor-card col">
+           <div class="card p-lg-5 p-md-4 p-4 img-hover-enlarge h-100" style="box-shadow: 0px 25px 50px -12px #0000001F;
+">
+            <div class="position-relative mb-lg-5 mb-4">
+             <div class="img-wrapper rounded-2">
+              <!-- dynamic image path -->
+              <img alt="course-3" class="card-img-top cover-img rounded-2 object-fit-cover" src="/Coding-bit/assets/course-3-929f59ab.png">
+              </img>
+             </div>
+             <!-- dynamic favorite status -->
+             <span class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle" data-favorite="true" role="button" style="background-color: #1e1e1e66">
+              favorite
+             </span>
+            </div>
+            <div class="card-body p-0 d-flex flex-column">
+             <div class="mb-5 f-between-start">
+              <div class="f-center">
+               <!-- dynamic tutor profile -->
+               <img alt="" class="object-cover-fit rounded-circle me-2" height="45" src="/Coding-bit/assets/user-10-2614d161.png" width="45"/>
+               <div>
+                <!-- dynamic tutor name -->
+                <h5 class="card-title fw-medium text-gray-01 fs-lg-6 fs-5 mb-1">
+                 Alan Lee
+                </h5>
+                <!-- dynamic title-->
+                <p class="text-gray-02 fs-8">
+                 熱愛遊戲的熱血青年
+                </p>
+               </div>
+              </div>
+              <p class="f-center text-brand-03">
+               <span class="material-symbols-outlined icon-fill text-brand-01 me-1">
+                kid_star
+               </span>
+               <!-- dynamic score -->
+               4.3
+              </p>
+             </div>
+             <!-- dynamic tag loop -->
+             <div class="mb-auto">
+              <div class="">
+               <div class="d-inline-block mb-5">
+                <a class="tag tag-brand-02 fs-8" href="#">
+                 Unity
+                </a>
+               </div>
+               <div class="d-inline-block mb-5">
+                <a class="tag tag-brand-02 fs-8" href="#">
+                 2D遊戲製作
+                </a>
+               </div>
+              </div>
+             </div>
+             <div class="mb-lg-6 mb-5 mt-auto">
+              <p class="text-gray-02 fs-7 fs-lg-6">
+               每小時收費
+              </p>
+              <!-- dynamic price -->
+              <h2 class="text-brand-03 fs-lg-2 fs-3">
+               NT $ 250
+              </h2>
+             </div>
+             <a class="btn btn-brand-03 w-100 slide-right-hover" href="tutor-booking.html">
+              <p class="f-center me-1">
+               立即預約
+               <span class="material-symbols-outlined">
+                arrow_forward
+               </span>
+              </p>
+             </a>
+            </div>
+           </div>
+          </li>
+         </div>
+        </div>
+       </div>
+      </section>
+     </div>
+     <!-- Desktop right CTA card -->
+     <div class="col-lg-4 d-lg-block d-none">
+      <div class="desktop-cta-card card p-lg-6 p-4 sticky-top">
+       <div class="position-relative mb-lg-5 mb-4">
+        <div class="img-wrapper img-hover-enlarge rounded-2">
+         <img alt="course-2" class="card-img-top rounded-2 object-fit-cover" src="/Coding-bit/assets/course-2-550d8ff7.png">
+         </img>
+        </div>
+        <span class="favorite material-symbols-outlined icon-fill p-2 rounded-circle align-middle" data-favorite="true" role="button" style="background-color: #1e1e1e66">
+         favorite
+        </span>
+       </div>
+       <div class="card-body p-0">
+        <div class="mb-lg-6 mb-5">
+         <p class="text-gray-02 fs-7 fs-lg-6">
+          每小時收費
+         </p>
+         <h2 class="text-brand-03 fs-lg-2 fs-3">
+          NT $250
+         </h2>
+        </div>
+        <button class="btn slide-right-hover btn-brand-03 w-100" data-bs-target="#serviceSelectionModal" data-bs-toggle="modal">
+         <p class="f-center me-1">
+          立即預約
+          <span class="material-symbols-outlined">
+           arrow_forward
+          </span>
+         </p>
+        </button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </main>
+  </div>
+  <!-- Modal -->
+  <!-- Modal - Service Select Modal -->
+  <div aria-hidden="true" aria-labelledby="serviceSelectionModalLabel" class="modal fade service-selection-modal" id="serviceSelectionModal" tabindex="-1">
+   <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+     <div class="modal-header border-0 pb-0">
+      <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+      </button>
+     </div>
+     <div class="modal-body">
+      <h4 class="modal-title fs-md-2 fs-3 text-center mb-8" id="serviceSelectionModalLabel">
+       請選擇想預約的項目
+      </h4>
+      <div class="row row-cols-lg-2 g-4 flex-column flex-lg-row">
+       <div class="col service-card">
+        <a class="h-100" href="tutor-booking-payment-step1-1on1.html">
+         <div class="f-center flex-column bg-gray-04 py-8 px-5 rounded-2 slide-up-hover h-100">
+          <h3 class="fs-4 fs-md-3">
+           一對一教學
+          </h3>
+          <img alt="" class="" src="/Coding-bit/assets/Illustration-7-28dcbb99.png"/>
+          <p class="text-center mb-auto">
+           以線上Google meeting的形式，
+                      將於預約時間前一天發送會議連結，
+                      講師會於預約時間內進行一對一單獨指導。
+          </p>
+         </div>
+        </a>
+       </div>
+       <div class="col service-card">
+        <a class="h-100" href="tutor-booking-payment-step1-code-review.html">
+         <div class="f-center flex-column bg-gray-04 py-8 px-5 rounded-2 slide-up-hover h-100">
+          <h3 class="fs-4 fs-md-3">
+           程式碼檢視
+          </h3>
+          <img alt="" class="" src="/Coding-bit/assets/Illustration-8-0fe7d17b.png"/>
+          <p class="text-center mb-auto">
+           您需要於預約時繳交GitHub Repo， 提供想接受檢視的程式碼，
+                      講師會於預約時間內進行程式碼檢視服務，
+                      並且於時間結束時回覆檢視後的結果。
+          </p>
+         </div>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Modal - Student Comment Modal -->
+  <div aria-hidden="true" aria-labelledby="studentCommentModalLabel" class="modal fade student-comment-modal" id="studentCommentModal" tabindex="-1">
+   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+    <div class="modal-content">
+     <div class="modal-header border-0 pb-0">
+      <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+      </button>
+     </div>
+     <div class="modal-body">
+      <h4 class="modal-title fs-md-2 fs-3 text-center mb-8" id="serviceSelectionModalLabel">
+       學生評價
+      </h4>
+      <div class="row flex-column g-2">
+       <div class="col">
+        <div class="card p-4">
+         <div class="row justify-content-center">
+          <div class="col-lg-5 f-center flex-column">
+           <h4 class="text-brand-03 mb-2">
+            4.9
+           </h4>
+           <div class="f-center mb-2">
+            <img alt="" class="text-brand-01" height="16" src="/Coding-bit/assets/kid_star-55ba9aed.svg" width="16"/>
+            <img alt="" height="16" src="/Coding-bit/assets/kid_star-55ba9aed.svg" width="16"/>
+            <img alt="" height="16" src="/Coding-bit/assets/kid_star-55ba9aed.svg" width="16"/>
+            <img alt="" height="16" src="/Coding-bit/assets/kid_star-55ba9aed.svg" width="16"/>
+            <img alt="" height="16" src="/Coding-bit/assets/kid_star_half_purple-8b85d5e5.svg" width="16"/>
+           </div>
+           <p class="fs-7">
+            111則評論
+           </p>
+          </div>
+          <div class="col-lg-7">
+           <ol class="ps-0 mb-0">
+            <!-- 5星 -->
+            <li class="f-between-center">
+             <p class="fs-7 me-3">
+              5 星
+             </p>
+             <div aria-label="Basic example" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress flex-grow-1" role="progressbar" style="height: 8px">
+              <div class="progress-bar" style="width: 85%">
+              </div>
+             </div>
+             <p class="class=fs-7 text-gray-03">
+              108
+             </p>
+            </li>
+            <!-- 4星 -->
+            <li class="f-between-center">
+             <p class="fs-7 me-3">
+              4 星
+             </p>
+             <div aria-label="Basic example" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress flex-grow-1" role="progressbar" style="height: 8px">
+              <div class="progress-bar" style="width: 15%">
+              </div>
+             </div>
+             <p class="class=fs-7 text-gray-03">
+              3
+             </p>
+            </li>
+            <!-- 3星 -->
+            <li class="f-between-center">
+             <p class="fs-7 me-3">
+              3 星
+             </p>
+             <div aria-label="Basic example" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress flex-grow-1" role="progressbar" style="height: 8px">
+              <div class="progress-bar" style="width: 0%">
+              </div>
+             </div>
+             <p class="class=fs-7 text-gray-03">
+              0
+             </p>
+            </li>
+            <!-- 2星 -->
+            <li class="f-between-center">
+             <p class="fs-7 me-3">
+              2 星
+             </p>
+             <div aria-label="Basic example" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress flex-grow-1" role="progressbar" style="height: 8px">
+              <div class="progress-bar" style="width: 0%">
+              </div>
+             </div>
+             <p class="class=fs-7 text-gray-03">
+              0
+             </p>
+            </li>
+            <!-- 1星 -->
+            <li class="f-between-center">
+             <p class="fs-7 me-3">
+              1 星
+             </p>
+             <div aria-label="Basic example" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress flex-grow-1" role="progressbar" style="height: 8px">
+              <div class="progress-bar" style="width: 0%">
+              </div>
+             </div>
+             <p class="class=fs-7 text-gray-03">
+              0
+             </p>
+            </li>
+           </ol>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="col">
+        <div class="student-comment-card card p-4 h-100">
+         <div>
+          <img alt="profile" class="object-fit-cover rounded-circle me-4 avatar" src="/Coding-bit/assets/user-2-33082ac6.png"/>
+         </div>
+         <div class="flex-grow-1">
+          <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+           阮永庭
+          </h6>
+          <p class="comment-details mb-1">
+           找了老師檢視我的程式碼，我才發現我的code原來可以更簡潔。老師有問必答，而且非常專業，跟著老師一步一步的，能很快感覺到進步。
+          </p>
+          <p class="timestamp text-gray-03 fs-7 mt-auto">
+           2024-07-31 10:30
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="col">
+        <div class="student-comment-card card p-4 h-100">
+         <div>
+          <img alt="profile" class="object-fit-cover rounded-circle me-4 avatar" src="/Coding-bit/assets/user-3-ee46b278.png"/>
+         </div>
+         <div class="flex-grow-1">
+          <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+           黄詠琪
+          </h6>
+          <p class="comment-details mb-1">
+           所有我的問題都得到了解決。謝謝老師。
+          </p>
+          <p class="timestamp text-gray-03 fs-7 mt-auto">
+           2024-08-01 10:30
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="col">
+        <div class="student-comment-card card p-4 h-100">
+         <div>
+          <img alt="profile" class="object-fit-cover rounded-circle me-4 avatar" src="/Coding-bit/assets/user-4-e0a6fbf8.png"/>
+         </div>
+         <div class="flex-grow-1">
+          <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+           鍾宗仁
+          </h6>
+          <p class="comment-details mb-1">
+           非常感謝老師。我的問題積累很長的時間，一直不明白，但是老師很有耐心的教導我，我終於明白了原理。下一次還有問題，還是會找老師！
+          </p>
+          <p class="timestamp text-gray-03 fs-7 mt-auto">
+           2024-08-07 10:30
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="col">
+        <div class="student-comment-card card p-4 h-100">
+         <div>
+          <img alt="profile" class="object-fit-cover rounded-circle me-4 avatar" src="/Coding-bit/assets/user-2-33082ac6.png"/>
+         </div>
+         <div class="flex-grow-1">
+          <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+           阮永庭
+          </h6>
+          <p class="comment-details mb-1">
+           找了老師檢視我的程式碼，我才發現我的code原來可以更簡潔。老師有問必答，而且非常專業，跟著老師一步一步的，能很快感覺到進步。
+          </p>
+          <p class="timestamp text-gray-03 fs-7 mt-auto">
+           2024-07-31 10:30
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="col">
+        <div class="student-comment-card card p-4 h-100">
+         <div>
+          <img alt="profile" class="object-fit-cover rounded-circle me-4 avatar" src="/Coding-bit/assets/user-3-ee46b278.png"/>
+         </div>
+         <div class="flex-grow-1">
+          <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+           黄詠琪
+          </h6>
+          <p class="comment-details mb-1">
+           所有我的問題都得到了解決。謝謝老師。
+          </p>
+          <p class="timestamp text-gray-03 fs-7 mt-auto">
+           2024-08-01 10:30
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="col">
+        <div class="student-comment-card card p-4 h-100">
+         <div>
+          <img alt="profile" class="object-fit-cover rounded-circle me-4 avatar" src="/Coding-bit/assets/user-4-e0a6fbf8.png"/>
+         </div>
+         <div class="flex-grow-1">
+          <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+           鍾宗仁
+          </h6>
+          <p class="comment-details mb-1">
+           非常感謝老師。我的問題積累很長的時間，一直不明白，但是老師很有耐心的教導我，我終於明白了原理。下一次還有問題，還是會找老師！
+          </p>
+          <p class="timestamp text-gray-03 fs-7 mt-auto">
+           2024-08-07 10:30
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="col">
+        <div class="student-comment-card card p-4 h-100">
+         <div>
+          <img alt="profile" class="object-fit-cover rounded-circle me-4 avatar" src="/Coding-bit/assets/user-2-33082ac6.png"/>
+         </div>
+         <div class="flex-grow-1">
+          <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+           阮永庭
+          </h6>
+          <p class="comment-details mb-1">
+           找了老師檢視我的程式碼，我才發現我的code原來可以更簡潔。老師有問必答，而且非常專業，跟著老師一步一步的，能很快感覺到進步。
+          </p>
+          <p class="timestamp text-gray-03 fs-7 mt-auto">
+           2024-07-31 10:30
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="col">
+        <div class="student-comment-card card p-4 h-100">
+         <div>
+          <img alt="profile" class="object-fit-cover rounded-circle me-4 avatar" src="/Coding-bit/assets/user-3-ee46b278.png"/>
+         </div>
+         <div class="flex-grow-1">
+          <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+           黄詠琪
+          </h6>
+          <p class="comment-details mb-1">
+           所有我的問題都得到了解決。謝謝老師。
+          </p>
+          <p class="timestamp text-gray-03 fs-7 mt-auto">
+           2024-08-01 10:30
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="col">
+        <div class="student-comment-card card p-4 h-100">
+         <div>
+          <img alt="profile" class="object-fit-cover rounded-circle me-4 avatar" src="/Coding-bit/assets/user-4-e0a6fbf8.png"/>
+         </div>
+         <div class="flex-grow-1">
+          <h6 class="mb-2 text-gray-01 fw-medium mb-1">
+           鍾宗仁
+          </h6>
+          <p class="comment-details mb-1">
+           非常感謝老師。我的問題積累很長的時間，一直不明白，但是老師很有耐心的教導我，我終於明白了原理。下一次還有問題，還是會找老師！
+          </p>
+          <p class="timestamp text-gray-03 fs-7 mt-auto">
+           2024-08-07 10:30
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <footer class="layout-footer-wrap wrap-lg bg-white">
+   <div class="container f-xl-between">
+    <div class="footer-info-wrap flex-grow-1">
+     <a class="navbar-brand" href="index.html">
+      <picture>
+       <source media="(max-width: 575.98px)" srcset="/Coding-bit/assets/logo-sm-4c04fedc.svg "/>
+       <img alt="logo-image" src="/Coding-bit/assets/logo-da4adea3.svg"/>
+      </picture>
+     </a>
+     <ul class="mt-4">
+      <li class="f-align-center">
+       <span class="material-symbols-outlined fs-6">
+        call
+       </span>
+       <a class="fs-7 underline-hover lh-sm ms-2" href="tel:+0212345678">
+        (02) 1234-5678
+       </a>
+      </li>
+      <li class="f-align-center mt-2">
+       <span class="material-symbols-outlined fs-6">
+        schedule
+       </span>
+       <p class="fs-7 lh-sm ms-2">
+        MON - FRI : 8:30 am - 17:30 pm
+       </p>
+      </li>
+      <li class="f-align-center mt-2">
+       <p class="fs-7 lh-sm">
+        本網站僅供作品參考，並非真實營運販售
+       </p>
+      </li>
+     </ul>
+    </div>
+    <div class="d-flex flex-grow-1 mt-8 mt-lg-0">
+     <ul class="navbar-nav f-column w-50 px-4">
+      <li class="nav-item">
+       <a aria-current="page" class="nav-link underline-hover d-inline-flex link-gray-02 fs-7" href="course-list.html">
+        精選課程
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02 fs-7" href="tutor-list.html">
+        一對一教學
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02 fs-7" href="custom-course.html">
+        課程客製化
+       </a>
+      </li>
+     </ul>
+     <ul class="navbar-nav f-column w-50 px-4">
+      <li class="nav-item">
+       <a aria-current="page" class="nav-link underline-hover d-inline-flex link-gray-02 fs-7" href="help-center.html">
+        幫助中心
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02 fs-7" href="subscription.html">
+        訂閱方案選擇
+       </a>
+      </li>
+     </ul>
+    </div>
+    <ul class="d-flex justify-content-lg-end flex-grow-1 mt-8 mt-lg-0 ms-lg-6">
+     <li>
+      <a class="icon-hover" href="#">
+       <img alt="icon-ins" src="/Coding-bit/assets/icon-ins-purple-75e17ab2.svg"/>
+      </a>
+     </li>
+     <li class="ms-3">
+      <a class="icon-hover" href="#">
+       <img alt="icon-ins" src="/Coding-bit/assets/icon-facebook-purple-e86143aa.svg"/>
+      </a>
+     </li>
+     <li class="ms-3">
+      <a class="icon-hover" href="#">
+       <img alt="icon-ins" src="/Coding-bit/assets/icon-mail-purple-c0b70022.svg"/>
+      </a>
+     </li>
+    </ul>
+   </div>
+  </footer>
+  <!--Mobile sticky bottom CTA card -->
+  <div class="mobile-bottom-cta d-lg-none sticky-bottom border border-2 border-brand-02 bg-white" style="border-radius: 16px 16px 0px 0px">
+   <div class="pt-4 pb-6 px-4">
+    <div class="f-between-center">
+     <div>
+      <p class="text-gray-02 fs-7 fs-lg-6">
+       每小時收費
+      </p>
+      <h2 class="text-brand-03 fs-lg-2 fs-3">
+       NT $250
+      </h2>
+     </div>
+     <button class="btn slide-right-hover btn-brand-03" data-bs-target="#serviceSelectionModal" data-bs-toggle="modal">
+      <p class="f-center me-1">
+       立即預約
+       <span class="material-symbols-outlined">
+        arrow_forward
+       </span>
+      </p>
+     </button>
+    </div>
+   </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+  </script>
+  <script>
+   new Swiper(".tutor-card-swiper", {
+          slidesPerView: 1,
+          spaceBetween: 40,
+          loop: true,
+          grabCursor: true,
+          autoplay: {
+            delay: 5000,
+          },
+          breakpoints: {
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+          },
+        });
+
+        new Swiper(".freeTipShortsSwiper", {
+          slidesPerView: 1,
+          spaceBetween: 40,
+          loop: true,
+          grabCursor: true,
+          autoplay: {
+            delay: 5000,
+          },
+          breakpoints: {
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+          },
+        });
+  </script>
+ </body>
+</html>

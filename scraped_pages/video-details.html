@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+   <link href="/Coding-bit/assets/icon-infinite-7978421b.svg" rel="icon" type="image/x-icon">
+    <title>
+     React 進階開發技巧 ｜ 課程詳細
+    </title>
+    <script crossorigin="" src="/Coding-bit/assets/video-details-4e23b638.js" type="module">
+    </script>
+    <link crossorigin="" href="/Coding-bit/assets/main-8cc1435a.js" rel="modulepreload"/>
+    <link crossorigin="" href="/Coding-bit/assets/courses-dc73fe3c.js" rel="modulepreload"/>
+    <link href="/Coding-bit/assets/main-9db69f1c.css" rel="stylesheet"/>
+   </link>
+  </link>
+ </head>
+ <body>
+  <div class="loader-wrapper">
+   <svg height="75px" preserveaspectratio="xMidYMid meet" viewbox="0 0 187.3 93.7" width="150px">
+    <defs>
+     <lineargradient id="gradient" x1="0%" x2="100%" y1="0%" y2="0%">
+      <stop offset="0%" style="stop-color: #d0a2f7; stop-opacity: 1">
+      </stop>
+      <stop offset="50%" style="stop-color: #f1eaff; stop-opacity: 1">
+      </stop>
+      <stop offset="100%" style="stop-color: #645caa; stop-opacity: 1">
+      </stop>
+     </lineargradient>
+    </defs>
+    <path d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 -8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" id="outline-bg">
+    </path>
+    <path d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 -8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" id="outline">
+    </path>
+   </svg>
+  </div>
+  <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light bg-transparent">
+   <div class="container-lg">
+    <div class="d-flex">
+     <a class="navbar-brand me-10" href="index.html">
+      <picture>
+       <source media="(max-width: 575.98px)" srcset="/Coding-bit/assets/logo-sm-4c04fedc.svg "/>
+       <img alt="logo-image" src="/Coding-bit/assets/logo-da4adea3.svg"/>
+      </picture>
+     </a>
+     <div class="position-relative f-align-center d-none d-xl-flex">
+      <input class="form-control nav-search-desktop" placeholder="搜尋感興趣的課程" type="search"/>
+      <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px">
+       search
+      </span>
+     </div>
+    </div>
+    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler border-0 p-2" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" id="layout-navbar-toggler" type="button">
+     <span class="material-symbols-outlined icon-fill fs-4" id="menu-icon">
+      menu
+     </span>
+     <span class="material-symbols-outlined icon-fill fs-4 d-none" id="close-icon">
+      close
+     </span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+     <ul class="navbar-nav align-items-lg-center">
+      <li class="position-relative f-align-center d-lg-none">
+       <input class="form-control nav-search-mobile" placeholder="搜尋感興趣的課程" type="search"/>
+       <span class="material-symbols-outlined text-gray-03 position-absolute ps-4" style="width: 20px; height: 20px">
+        search
+       </span>
+      </li>
+      <li class="nav-item mt-4 mt-lg-0">
+       <a aria-current="page" class="nav-link underline-hover d-inline-flex link-gray-02" href="course-list.html">
+        精選課程
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02" href="tutor-list.html">
+        一對一教學
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02" href="custom-course.html">
+        課程客製化
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02" href="help-center.html">
+        幫助中心
+       </a>
+      </li>
+      <li class="nav-item nav-bottom-btn ms-lg-10">
+       <a href="sign-up.html">
+        <button class="btn btn-outline-brand-03 w-100">
+         登入 / 註冊
+        </button>
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script>
+   document.addEventListener('DOMContentLoaded', function () {
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    const toggler = document.getElementById('layout-navbar-toggler');
+    const layoutNavWrap = document.querySelector('.layout-nav-wrap');
+
+    toggler.addEventListener('click', function () {
+      if (menuIcon.classList.contains('d-none')) {
+        menuIcon.classList.remove('d-none');
+        closeIcon.classList.add('d-none');
+        layoutNavWrap.classList.remove('bg-white');
+        layoutNavWrap.classList.add('bg-transparent');
+
+        document.body.classList.remove('no-scroll');
+      } else {
+        menuIcon.classList.add('d-none');
+        closeIcon.classList.remove('d-none');
+        layoutNavWrap.classList.remove('bg-transparent');
+        layoutNavWrap.classList.add('bg-white');
+
+        document.body.classList.add('no-scroll');
+
+      }
+    });
+  });
+  </script>
+  <main class="video-details container-lg py-lg-13 py-md-0">
+   <div class="row">
+    <section class="col-lg-7 col-xl-8">
+     <video class="mb-6 w-100 video-show mouse-pointer-style" controls="" poster="/Coding-bit/assets/video-thumbnail-60650eba.jpg" src="https://firebasestorage.googleapis.com/v0/b/video-test-d54b2.appspot.com/o/GitHub_DC_Webhook_.mp4?alt=media&amp;token=4dac0f51-01b2-4adc-a005-53b9b7de0363">
+     </video>
+     <h1 class="fs-2 mb-4 video-title">
+      React 進階開發技巧
+     </h1>
+     <div class="d-flex mb-sm-6 mb-2">
+      <div class="f-align-center">
+       <div class="f-align-center py-2 ps-0">
+        <span class="view-count me-1 fs-5 material-symbols-outlined">
+         visibility
+        </span>
+        <data class="fs-7 data-view-count" value="12345">
+         12,345
+        </data>
+       </div>
+       <div class="f-align-center py-2 px-4">
+        <span class="rating-score me-1 fs-5 material-symbols-outlined icon-fill">
+         kid_star
+        </span>
+        <data class="fs-7 data-rating-score" value="6789">
+         6,789
+        </data>
+       </div>
+      </div>
+      <div class="ms-auto">
+       <div class="f-align-center">
+        <button class="favorite-button f-align-center btn btn-outline-none py-2 ps-3 px-4" type="button">
+         <span class="fs-5 me-1 material-symbols-outlined icon-fill">
+          favorite
+         </span>
+         <span class="fs-7 favorite-font">
+          已收藏
+         </span>
+        </button>
+        <button class="review-button f-align-center btn btn-outline-none py-2 ps-0 pe-0 pe-sm-4" type="button">
+         <span class="fs-5 me-1 material-symbols-outlined icon-fill">
+          kid_star
+         </span>
+         <span class="fs-7 review-font">
+          已評價
+         </span>
+        </button>
+       </div>
+      </div>
+     </div>
+     <div class="mb-sm-6 mb-5">
+      <ul class="d-flex flex-wrap gap-2">
+       <li class="tag-label btn btn-brand-03 py-2 px-4 mouse-pointer-style">
+        <h3>
+         React
+        </h3>
+       </li>
+       <li class="tag-label btn btn-brand-03 py-2 px-4 mouse-pointer-style">
+        <h3>
+         前端開發
+        </h3>
+       </li>
+       <li class="tag-label btn btn-brand-03 py-2 px-4 mouse-pointer-style">
+        <h3>
+         效能優化
+        </h3>
+       </li>
+       <li class="tag-label btn btn-brand-03 py-2 px-4 mouse-pointer-style">
+        <h3>
+         Hooks
+        </h3>
+       </li>
+      </ul>
+     </div>
+     <div class="author-content d-flex mb-10">
+      <img alt="作者頭像" class="author-image rounded-5 me-4" src="/Coding-bit/assets/user-1-f526f231.png"/>
+      <div>
+       <h2 class="author-name mb-2">
+        卡斯伯Casper
+       </h2>
+       <span class="author-info fs-7">
+        10年經驗的前端工程師
+       </span>
+      </div>
+     </div>
+     <div>
+      <nav class="mb-6">
+       <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item mouse-pointer-style" role="presentation">
+         <div aria-controls="home" aria-selected="true" class="nav-link active video-description" data-bs-target="#home" data-bs-toggle="tab" id="home-tab" role="tab">
+          影片簡介
+         </div>
+        </li>
+        <li class="nav-item mouse-pointer-style" role="presentation">
+         <div aria-controls="profile" aria-selected="false" class="nav-link video-comments" data-bs-target="#profile" data-bs-toggle="tab" id="profile-tab" role="tab">
+          留言討論區
+         </div>
+        </li>
+       </ul>
+       <div class="tab-content" id="myTabContent">
+        <div aria-labelledby="home-tab" class="tab-pane fade show active" id="home" role="tabpanel">
+         <ul class="ps-5 pt-6">
+          <li class="video-description-item mb-2">
+           <h6>
+            掌握 React Hooks 的進階用法：
+            除了基本的 useState 和 useEffect，我們還將講解自定義 Hook 的編寫技巧，讓你在複雜應用中輕鬆實現程式碼重用和邏輯封裝。
+           </h6>
+          </li>
+          <li class="video-description-item mb-2">
+           <h6>
+            了解 React 性能優化技巧：
+            課程涵蓋如何運用 React.memo、useMemo、useCallback 等進行性能優化，確保應用在複雜環境中保持流暢的用戶體驗。
+           </h6>
+          </li>
+          <li class="video-description-item mb-2">
+           <h6>
+            學習 React 狀態管理最佳實踐：
+            透過分析多種狀態管理工具如 Redux、Context API 等，幫助你選擇最適合專案的方案，並了解如何高效管理全域和局部狀態。
+           </h6>
+          </li>
+          <li class="video-description-item mb-2">
+           <h6>
+            探索 React 生態系統中的常用工具：
+            除了核心的 React 知識，還會介紹 React Router、React Query、Formik 等常用工具和庫，助你更快速地構建現代化的 React 應用。
+           </h6>
+          </li>
+         </ul>
+        </div>
+        <div aria-labelledby="profile-tab" class="tab-pane fade" id="profile" role="tabpanel">
+         <section class="video-comments pt-6">
+          <div class="d-flex py-4 mb-6">
+           <img alt="當前使用者頭像" class="user-comment-picture me-3" src="/Coding-bit/assets/user-2-33082ac6.png"/>
+           <input class="w-100 user-comment py-2" id="user-comment" name="user-comment" placeholder="發表留言" type="text"/>
+          </div>
+          <ul class="history-commemts">
+           <li class="mb-6">
+            <div class="user-content d-flex mb-3">
+             <img alt="留言者頭像" class="user-image me-4" src="/Coding-bit/assets/user-2-33082ac6.png"/>
+             <div class="d-flex justify-content-between align-items-center flex-fill">
+              <div class="f-column">
+               <span class="user-name mb-2">
+                張小明
+               </span>
+               <time class="comment-time fs-7">
+                2024-08-06 08:00
+               </time>
+              </div>
+              <button class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 delete-comment" type="button">
+               刪除
+              </button>
+             </div>
+            </div>
+            <div class="reply">
+             <p class="reply-style fs-6">
+              這個課程把Hooks解釋得很清楚，讓我對useEffect和useCallback有了更深入的理解。講師的示例簡單易懂，推薦給大家。
+             </p>
+             <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+               <div class="accordion-header mb-4" id="flush-headingOne">
+                <span aria-controls="flush-collapseOne" aria-expanded="false" class="accordion-button mouse-pointer-style collapsed py-2 px-4" data-bs-target="#flush-collapseOne" data-bs-toggle="collapse">
+                 1 則回覆
+                </span>
+               </div>
+               <div aria-labelledby="flush-headingOne" class="accordion-collapse collapse rounded-2" id="flush-collapseOne">
+                <div class="accordion-body">
+                 <div class="tutor-content">
+                  <div class="d-flex mb-3">
+                   <img alt="留言回覆者頭像" class="tutor-image me-4" src="/Coding-bit/assets/user-1-f526f231.png"/>
+                   <div class="d-flex justify-content-between align-items-center flex-fill">
+                    <div class="f-column">
+                     <span class="tutor-name mb-2">
+                      卡斯伯Casper
+                     </span>
+                     <time class="comment-time fs-7">
+                      2024-08-07 10:30
+                     </time>
+                    </div>
+                    <button class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment" type="button">
+                     回覆
+                    </button>
+                   </div>
+                  </div>
+                  <p class="tutor-reply-style fs-6">
+                   謝謝你的評價！如果在學習的過程中有任何問題，歡迎隨時來這裡提問。
+                  </p>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </li>
+           <li class="mb-6">
+            <div class="user-content d-flex mb-3">
+             <img alt="留言者頭像" class="user-image me-4" src="/Coding-bit/assets/user-11-ee246f0d.png"/>
+             <div class="d-flex justify-content-between align-items-center flex-fill">
+              <div class="f-column">
+               <span class="user-name mb-2">
+                李大華
+               </span>
+               <time class="comment-time fs-7">
+                2024-08-07 14:35
+               </time>
+              </div>
+              <button class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment" type="button">
+               回覆
+              </button>
+             </div>
+            </div>
+            <div class="reply">
+             <p class="reply-style fs-6">
+              講師好，我不太理解在甚麼情況下使用useMemo會比直接計算來的更有效率，希望講師能幫我解答～。
+             </p>
+             <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+               <div class="accordion-header mb-4" id="flush-headingTwo">
+                <span aria-controls="flush-collapseTwo" aria-expanded="false" class="accordion-button mouse-pointer-style collapsed py-2 px-4" data-bs-target="#flush-collapseTwo" data-bs-toggle="collapse">
+                 1 則回覆
+                </span>
+               </div>
+               <div aria-labelledby="flush-headingTwo" class="accordion-collapse collapse rounded-2" id="flush-collapseTwo">
+                <div class="accordion-body">
+                 <div class="tutor-content">
+                  <div>
+                   <div class="d-flex mb-3">
+                    <img alt="回覆留言者頭像" class="tutor-image me-4" src="/Coding-bit/assets/user-1-f526f231.png"/>
+                    <div class="d-flex justify-content-between align-items-center flex-fill">
+                     <div class="f-column">
+                      <span class="tutor-name mb-2">
+                       卡斯伯Casper
+                      </span>
+                      <time class="comment-time fs-7">
+                       2024-08-07 16:05
+                      </time>
+                     </div>
+                     <button class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment" type="button">
+                      回覆
+                     </button>
+                    </div>
+                   </div>
+                   <p class="tutor-reply-style fs-6">
+                    哈囉～李大華，useMemo是React中的一個Hook，用於記憶化計算結果，以避免在每次渲染時都重新計算。
+                    <br/>
+                    這在某些情況下可以提高性能，特別是當計算過程非常耗時或依賴於不頻繁變化的依賴項時。
+                    <br/>
+                    <br/>
+                    不懂得話，可以再問我喔！
+                   </p>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </li>
+           <li class="mb-6">
+            <div class="user-content d-flex mb-3">
+             <img alt="留言者頭像" class="user-image me-4" src="/Coding-bit/assets/user-3-ee46b278.png"/>
+             <div class="d-flex justify-content-between align-items-center flex-fill">
+              <div class="f-column">
+               <span class="user-name mb-2">
+                王小花
+               </span>
+               <time class="comment-time fs-7">
+                2024-08-11 18:30
+               </time>
+              </div>
+              <button class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment" type="button">
+               回覆
+              </button>
+             </div>
+            </div>
+            <div class="reply">
+             <p class="reply-style fs-6">
+              課程節奏穩定，講師的示範也很到位。
+             </p>
+             <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+               <div class="accordion-header mb-4" id="flush-headingThree">
+                <span aria-controls="flush-collapseThree" aria-expanded="false" class="accordion-button mouse-pointer-style collapsed py-2 px-4" data-bs-target="#flush-collapseThree" data-bs-toggle="collapse">
+                 2 則回覆
+                </span>
+               </div>
+               <div aria-labelledby="flush-headingThree" class="accordion-collapse collapse rounded-2" id="flush-collapseThree">
+                <div class="accordion-body">
+                 <div class="tutor-content">
+                  <div>
+                   <div class="d-flex mb-3">
+                    <img alt="回覆留言者頭像" class="tutor-image me-4" src="/Coding-bit/assets/user-1-f526f231.png"/>
+                    <div class="d-flex justify-content-between align-items-center flex-fill">
+                     <div class="f-column">
+                      <span class="tutor-name mb-2">
+                       卡斯伯Casper
+                      </span>
+                      <time class="comment-time fs-7">
+                       2024-08-12 07:10
+                      </time>
+                     </div>
+                     <button class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment" type="button">
+                      回覆
+                     </button>
+                    </div>
+                   </div>
+                   <p class="tutor-reply-style fs-6">
+                    謝謝王小花同學的讚美，如果有任何問題歡迎隨時提問。
+                   </p>
+                  </div>
+                  <div>
+                   <div class="d-flex mb-3">
+                    <img alt="回覆留言者頭像" class="tutor-image me-4" src="/Coding-bit/assets/user-3-ee46b278.png"/>
+                    <div class="d-flex justify-content-between align-items-center flex-fill">
+                     <div class="f-column">
+                      <span class="tutor-name mb-2">
+                       王小花
+                      </span>
+                      <time class="comment-time fs-7">
+                       2024-08-03 10:30
+                      </time>
+                     </div>
+                     <button class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment" type="button">
+                      回覆
+                     </button>
+                    </div>
+                   </div>
+                   <p class="tutor-reply-style fs-6">
+                    不客氣０＿０
+                   </p>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </li>
+           <li class="mb-6">
+           </li>
+           <div class="user-content d-flex mb-3">
+            <img alt="留言者頭像" class="user-image me-4" src="/Coding-bit/assets/user-4-e0a6fbf8.png"/>
+            <div class="d-flex justify-content-between align-items-center flex-fill">
+             <div class="f-column">
+              <span class="user-name mb-2">
+               李聰明
+              </span>
+              <time class="comment-time fs-7">
+               2024-08-15 20:30
+              </time>
+             </div>
+             <button class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment" type="button">
+              回覆
+             </button>
+            </div>
+           </div>
+           <div class="reply">
+            <p class="reply-style fs-6">
+             想請問老師之後還會有其他進階課程嗎？我對React的學習很感興趣。
+            </p>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+             <div class="accordion-item">
+              <div class="accordion-header mb-4" id="flush-headingFour">
+               <span aria-controls="flush-collapseFour" aria-expanded="false" class="accordion-button mouse-pointer-style collapsed py-2 px-4" data-bs-target="#flush-collapseFour" data-bs-toggle="collapse">
+                1 則回覆
+               </span>
+              </div>
+              <div aria-labelledby="flush-headingFour" class="accordion-collapse collapse rounded-2" id="flush-collapseFour">
+               <div class="accordion-body">
+                <div class="tutor-content">
+                 <div>
+                  <div class="d-flex mb-3">
+                   <img alt="回覆留言者頭像" class="tutor-image me-4" src="/Coding-bit/assets/user-1-f526f231.png"/>
+                   <div class="d-flex justify-content-between align-items-center flex-fill">
+                    <div class="f-column">
+                     <span class="tutor-name mb-2">
+                      卡斯伯Casper
+                     </span>
+                     <time class="comment-time fs-7">
+                      2024-08-21 15:25
+                     </time>
+                    </div>
+                    <button class="btn btn-outline-none fs-7 py-2 px-4 rounded-2 reply-comment" type="button">
+                     回覆
+                    </button>
+                   </div>
+                  </div>
+                  <p class="tutor-reply-style fs-6">
+                   目前僅開初級班哦，不過可以期待一下！
+                  </p>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </ul>
+         </section>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </section>
+    <aside class="col-lg-5 col-xl-4">
+     <div class="chapter-video rounded-4 aside-border mb-6">
+      <div class="px-6 d-flex justify-content-between align-items-center" style="margin-bottom: 22px;">
+       <h4 class="chapter-video-title">
+        章節影片
+       </h4>
+       <div class="f-align-center show-more-button mouse-pointer-style slide-right-hover">
+        <span class="me-1">
+         更多
+        </span>
+        <span class="material-symbols-outlined">
+         arrow_forward
+        </span>
+       </div>
+      </div>
+      <ul class="chapter-list">
+      </ul>
+     </div>
+     <div class="other-videos rounded-4 aside-border mb-6">
+      <div class="px-6 d-flex justify-content-between align-items-center" style="margin-bottom: 22px;">
+       <h4 class="tutor-other-video-title">
+        講師其他影片
+       </h4>
+       <a class="f-align-center show-more-button slide-right-hover" href="tutor-info.html">
+        <span class="me-1">
+         更多
+        </span>
+        <span class="material-symbols-outlined">
+         arrow_forward
+        </span>
+       </a>
+      </div>
+      <ul class="other-videos-list">
+      </ul>
+     </div>
+     <div class="related-videos rounded-4 aside-border">
+      <div class="px-6 f-between-center" style="margin-bottom: 22px;">
+       <h4 class="tutor-related-video-title">
+        相關影片
+       </h4>
+       <div class="f-align-center show-more-button mouse-pointer-style slide-right-hover">
+        <span class="me-1">
+         更多
+        </span>
+        <span class="material-symbols-outlined">
+         arrow_forward
+        </span>
+       </div>
+      </div>
+      <ul class="related-videos-list">
+      </ul>
+     </div>
+    </aside>
+   </div>
+  </main>
+  <footer class="layout-footer-wrap wrap-lg bg-white">
+   <div class="container f-xl-between">
+    <div class="footer-info-wrap flex-grow-1">
+     <a class="navbar-brand" href="index.html">
+      <picture>
+       <source media="(max-width: 575.98px)" srcset="/Coding-bit/assets/logo-sm-4c04fedc.svg "/>
+       <img alt="logo-image" src="/Coding-bit/assets/logo-da4adea3.svg"/>
+      </picture>
+     </a>
+     <ul class="mt-4">
+      <li class="f-align-center">
+       <span class="material-symbols-outlined fs-6">
+        call
+       </span>
+       <a class="fs-7 underline-hover lh-sm ms-2" href="tel:+0212345678">
+        (02) 1234-5678
+       </a>
+      </li>
+      <li class="f-align-center mt-2">
+       <span class="material-symbols-outlined fs-6">
+        schedule
+       </span>
+       <p class="fs-7 lh-sm ms-2">
+        MON - FRI : 8:30 am - 17:30 pm
+       </p>
+      </li>
+      <li class="f-align-center mt-2">
+       <p class="fs-7 lh-sm">
+        本網站僅供作品參考，並非真實營運販售
+       </p>
+      </li>
+     </ul>
+    </div>
+    <div class="d-flex flex-grow-1 mt-8 mt-lg-0">
+     <ul class="navbar-nav f-column w-50 px-4">
+      <li class="nav-item">
+       <a aria-current="page" class="nav-link underline-hover d-inline-flex link-gray-02 fs-7" href="course-list.html">
+        精選課程
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02 fs-7" href="tutor-list.html">
+        一對一教學
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02 fs-7" href="custom-course.html">
+        課程客製化
+       </a>
+      </li>
+     </ul>
+     <ul class="navbar-nav f-column w-50 px-4">
+      <li class="nav-item">
+       <a aria-current="page" class="nav-link underline-hover d-inline-flex link-gray-02 fs-7" href="help-center.html">
+        幫助中心
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link underline-hover d-inline-flex link-gray-02 fs-7" href="subscription.html">
+        訂閱方案選擇
+       </a>
+      </li>
+     </ul>
+    </div>
+    <ul class="d-flex justify-content-lg-end flex-grow-1 mt-8 mt-lg-0 ms-lg-6">
+     <li>
+      <a class="icon-hover" href="#">
+       <img alt="icon-ins" src="/Coding-bit/assets/icon-ins-purple-75e17ab2.svg"/>
+      </a>
+     </li>
+     <li class="ms-3">
+      <a class="icon-hover" href="#">
+       <img alt="icon-ins" src="/Coding-bit/assets/icon-facebook-purple-e86143aa.svg"/>
+      </a>
+     </li>
+     <li class="ms-3">
+      <a class="icon-hover" href="#">
+       <img alt="icon-ins" src="/Coding-bit/assets/icon-mail-purple-c0b70022.svg"/>
+      </a>
+     </li>
+    </ul>
+   </div>
+  </footer>
+ </body>
+</html>

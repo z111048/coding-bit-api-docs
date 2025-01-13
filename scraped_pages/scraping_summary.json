@@ -1,0 +1,153 @@
+{
+  "timestamp": "2025-01-14 00:00:52",
+  "total_pages": 29,
+  "successful_pages": 29,
+  "failed_pages": 0,
+  "results": {
+    "index.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/index.html",
+      "status": 200,
+      "error": null
+    },
+    "course-list.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/course-list.html",
+      "status": 200,
+      "error": null
+    },
+    "course-list_customLearning.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/course-list_customLearning.html",
+      "status": 200,
+      "error": null
+    },
+    "course-list_freeTipShorts.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/course-list_freeTipShorts.html",
+      "status": 200,
+      "error": null
+    },
+    "course-list_topicSeries.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/course-list_topicSeries.html",
+      "status": 200,
+      "error": null
+    },
+    "custom-course.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/custom-course.html",
+      "status": 200,
+      "error": null
+    },
+    "forgot-password.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/forgot-password.html",
+      "status": 200,
+      "error": null
+    },
+    "help-center.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/help-center.html",
+      "status": 200,
+      "error": null
+    },
+    "login.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/login.html",
+      "status": 200,
+      "error": null
+    },
+    "reset-password.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/reset-password.html",
+      "status": 200,
+      "error": null
+    },
+    "sign-up.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/sign-up.html",
+      "status": 200,
+      "error": null
+    },
+    "subscription-booking-normal.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/subscription-booking-normal.html",
+      "status": 200,
+      "error": null
+    },
+    "subscription-booking-premium.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/subscription-booking-premium.html",
+      "status": 200,
+      "error": null
+    },
+    "subscription-booking-success-normal.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/subscription-booking-success-normal.html",
+      "status": 200,
+      "error": null
+    },
+    "subscription-booking-success-premium.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/subscription-booking-success-premium.html",
+      "status": 200,
+      "error": null
+    },
+    "subscription-info-normal.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/subscription-info-normal.html",
+      "status": 200,
+      "error": null
+    },
+    "subscription-info-premium.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/subscription-info-premium.html",
+      "status": 200,
+      "error": null
+    },
+    "subscription.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/subscription.html",
+      "status": 200,
+      "error": null
+    },
+    "test.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/test.html",
+      "status": 200,
+      "error": null
+    },
+    "tutor-booking-payment-step1-1on1.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/tutor-booking-payment-step1-1on1.html",
+      "status": 200,
+      "error": null
+    },
+    "tutor-booking-payment-step1-code-review.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/tutor-booking-payment-step1-code-review.html",
+      "status": 200,
+      "error": null
+    },
+    "tutor-booking-payment-step2-1on1.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/tutor-booking-payment-step2-1on1.html",
+      "status": 200,
+      "error": null
+    },
+    "tutor-booking-payment-step2-code-review.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/tutor-booking-payment-step2-code-review.html",
+      "status": 200,
+      "error": null
+    },
+    "tutor-booking-payment-success-1on1.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/tutor-booking-payment-success-1on1.html",
+      "status": 200,
+      "error": null
+    },
+    "tutor-booking-payment-success-code-review.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/tutor-booking-payment-success-code-review.html",
+      "status": 200,
+      "error": null
+    },
+    "tutor-booking.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/tutor-booking.html",
+      "status": 200,
+      "error": null
+    },
+    "tutor-info.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/tutor-info.html",
+      "status": 200,
+      "error": null
+    },
+    "tutor-list.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/tutor-list.html",
+      "status": 200,
+      "error": null
+    },
+    "video-details.html": {
+      "url": "https://ahmomoz.github.io/Coding-bit/video-details.html",
+      "status": 200,
+      "error": null
+    }
+  }
+}
