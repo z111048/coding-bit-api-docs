@@ -1,4 +1,3 @@
-```markdown
 # 講師預約完成頁面 分析報告
 
 ## 1. 頁面基本資訊
@@ -149,4 +148,3 @@
 - **靜態資源**: 設定適當的 HTTP Header（如 Cache-Control）以減少重複加載。
 - **API 回應**: 使用 ETag 或 Last-Modified 標頭進行回應快取。
 
-```
